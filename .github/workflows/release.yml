@@ -1,0 +1,64 @@
+name: Package and Release JAR
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  jar-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Inject version into fabric.mod.json
+        run: |
+          set -euo pipefail
+          SHORT_SHA="${GITHUB_SHA:0:7}"
+          VERSION="v-$(date -u +%Y%m%d%H%M%S)-${SHORT_SHA}"
+
+          jq --arg v "$VERSION" '.version = $v' fabric.mod.json > fabric.mod.json.tmp
+          mv fabric.mod.json.tmp fabric.mod.json
+
+          echo "INJECTED_VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Create JAR of repository
+        run: |
+          set -euo pipefail
+
+          SHORT_SHA="${GITHUB_SHA:0:7}"
+          JAR_NAME="repo-${SHORT_SHA}.jar"
+
+          find . -type f \
+            ! -path "./.git/*" \
+            ! -name "$JAR_NAME" \
+            -print | sed 's|^\./||' > filelist.txt
+
+          jar cf "$JAR_NAME" -C . -@ < filelist.txt
+
+          echo "ZIP_NAME=$JAR_NAME" >> $GITHUB_ENV
+
+      - name: Create GitHub release and attach JAR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZIP_NAME: ${{ env.ZIP_NAME }}
+        run: |
+          set -euo pipefail
+
+          SHORT_SHA="${GITHUB_SHA:0:7}"
+          TAG="v-$(date -u +%Y%m%d%H%M%S)-${SHORT_SHA}"
+          TITLE="Automated release ${TAG}"
+          NOTES="Automated release for commit ${GITHUB_SHA} on branch ${GITHUB_REF#refs/heads/}"
+
+          gh release create "$TAG" "$ZIP_NAME" \
+            -t "$TITLE" \
+            -n "$NOTES" \
+            --repo "${{ github.repository }}"
+
+          echo "Created release $TAG with asset $ZIP_NAME"
