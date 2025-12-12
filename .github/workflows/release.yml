@@ -52,7 +52,7 @@ jobs:
         run: |
           set -euo pipefail
           TAG="$INJECTED_VERSION"
-          TITLE="Automated release $TAG"
+          TITLE="BTW CE Translations $TAG"
           NOTES="Automated release for commit ${GITHUB_SHA} on branch ${GITHUB_REF#refs/heads/}"
 
           gh release create "$TAG" "$JAR_NAME" \
