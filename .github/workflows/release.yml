@@ -21,13 +21,8 @@ jobs:
         run: |
           set -euo pipefail
           # Always use the same JAR name
-          JAR_NAME="btw-translations.jar"
+          JAR_NAME="btw-translation.jar"
           echo "JAR_NAME=$JAR_NAME" >> $GITHUB_ENV
-
-          # Human-readable nightly release title
-          NIGHTLY_DATE=$(date -u +"%b %dth %Y")
-          RELEASE_TITLE="BTW Translations Nightly $NIGHTLY_DATE"
-          echo "RELEASE_TITLE=$RELEASE_TITLE" >> $GITHUB_ENV
 
       - name: Inject version into fabric.mod.json
         run: |
@@ -49,6 +44,10 @@ jobs:
           # Update fabric.mod.json with new version
           jq --arg v "$INJECTED_VERSION" '.version = $v' fabric.mod.json > fabric.mod.json.tmp
           mv fabric.mod.json.tmp fabric.mod.json
+
+          # Set release title using version
+          RELEASE_TITLE="BTW Translations Nightly $INJECTED_VERSION"
+          echo "RELEASE_TITLE=$RELEASE_TITLE" >> $GITHUB_ENV
 
       - name: Create JAR of repository
         run: |
