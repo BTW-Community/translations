@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+!LICENSE
+!README.md
+!fabric.mod.json
+
+!.github/
+!.github/**
+
+!assets/
+!assets/**
+
+!programmer_art_assets/
+!programmer_art_assets/**
