@@ -963,6 +963,10 @@ deathScreen.respawnNearby=Nahes Wiederbeleben
 options.lock_difficulty=Schwierigkeit dieser Welt sperren
 options.lock_difficulty.warning=Bist du sicher, dass du die Schwierigkeit dieser Welt sperren möchtest? Dies ist Unwiderruflich!
 
+performance.max=Max. FPS
+performance.balanced=Ausgewogen
+performance.powersaver=Stromsparen
+
 options.borderlessFullscreen=Randloser Vollbildmodus
 
 options.languageWarning=Die Übersetzungen sind möglicherweise nicht zu 100% korrekt
