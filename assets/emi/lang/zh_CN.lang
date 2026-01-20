@@ -1,6 +1,5 @@
 # EMI
 
-
 key.keyboard.control=Ctrl
 key.keyboard.alt=Alt
 key.keyboard.shift=Shift
@@ -229,6 +228,7 @@ tooltip.emi.clear_resolution=点击§6这里§r§c清除§r分配
 tooltip.emi.config=%s配置
 tooltip.emi.recipe_tree=配方树
 
+
 tooltip.emi.config.global=在所有游戏实例间切换是否使用全局EMI配置，而不是每个游戏独立配置。/n§c尚未实现§r
 
 tooltip.emi.synfav.uncraftable=无法合成§c任何§r批次
@@ -325,6 +325,7 @@ emi.category.btw.turntable=旋转台
 emi.category.btw.campfire=篝火
 emi.category.btw.trading=交易
 emi.category.btw.progressive=编织
+emi.category.btw.hopper_filtering=漏斗过滤
 
 emi.category.emi.tag=标签
 emi.category.emi.ingredient=材料
@@ -336,64 +337,414 @@ alias.emi.stick=木棍
 alias.emi.tnt=火药桶
 alias.emi.cauldron=釜锅
 
-# EMI Tags
-tag.btw.seeds=种子
-tag.btw.shears=剪刀
-tag.btw.mossy_cobblestones=苔圆石
-tag.btw.loose_rocks=石子
-tag.btw.logs=原木
-tag.btw.cobblestones=圆石
-tag.btw.strings_and_hemp=线与麻
-tag.btw.coal_ores=煤矿石
-tag.btw.iron_ores=铁矿石
-tag.btw.chisels=凿子
-tag.btw.quartz_blocks=石英块
-tag.btw.diamond_ores=钻石矿石
-tag.btw.wood_corners=木边角
-tag.btw.planks=木板
-tag.btw.coals=煤炭
-tag.btw.lapis_ores=青金石矿
-tag.btw.high_quality_axes=高品质斧
-tag.btw.cooked_meats=熟肉
-tag.btw.fishing_hooks=鱼钩
-tag.btw.raw_meats=生肉
-tag.btw.gold_ores=金矿石
-tag.btw.emerald_ores=绿宝石矿石
-tag.btw.redstone_ores=红石矿石
-tag.btw.low_quality_axes=低品质斧
-tag.btw.barks=树皮
-tag.btw.sandstone_blocks=沙石块
-tag.btw.empty=如果你看到这个，说明出错了！
-tag.btw.strings=线
-tag.btw.leathers=皮革
-tag.btw.knit_wools=羊毛毡
-tag.btw.candles=蜡烛
-tag.btw.tanned_leathers=鞣制皮革
-tag.btw.axes=斧
-tag.btw.scoured_leathers=光滑皮革
-tag.btw.stone_brick_items=石砖物品
-tag.btw.wood_mouldings=木条
-tag.btw.wood_sidings=木半板
-tag.btw.wool_blocks=羊毛块
+#------ EMI Tags ------#
+
+tag.btw.empty=空
+
+# Wool
 tag.btw.wools=羊毛
-tag.btw.firestarters=取火器
-tag.btw.weapons=武器
-tag.btw.shovels=铲
+tag.btw.wools.colored=彩色羊毛
+tag.btw.knit_wools=羊毛毡
+tag.btw.knit_wools.colored=彩色羊毛毡
+tag.btw.wool_blocks=羊毛块
+tag.btw.wool_blocks.colored=彩色羊毛块
+tag.btw.wool_slabs=羊毛台阶
+tag.btw.wool_slabs.colored=彩色羊毛台阶
+tag.btw.carpets=地毯
+tag.btw.carpets.colored=彩色地毯
+
+# Dyes
+tag.btw.dyes=染料
+tag.btw.dyes.black=黑色染料
+tag.btw.dyes.red=红色染料
+tag.btw.dyes.green=绿色染料
+tag.btw.dyes.brown=棕色染料
+tag.btw.dyes.blue=蓝色染料
+tag.btw.dyes.purple=紫色染料
+tag.btw.dyes.cyan=青色染料
+tag.btw.dyes.light_gray=浅灰色染料
+tag.btw.dyes.gray=灰色染料
+tag.btw.dyes.pink=粉色染料
+tag.btw.dyes.lime=黄绿色染料
+tag.btw.dyes.yellow=黄色染料
+tag.btw.dyes.light_blue=淡蓝色染料
+tag.btw.dyes.magenta=品红色染料
+tag.btw.dyes.orange=橙色染料
+tag.btw.dyes.white=白色染料
+
+# Ores
+tag.btw.ores.coal=煤矿石
+tag.btw.ores.iron=矿石
+tag.btw.ores.lapis=青金石矿石
+tag.btw.ores.redstone=红石矿石
+tag.btw.ores.gold=金矿石
+tag.btw.ores.diamond=钻石矿石
+tag.btw.ores.emerald=绿宝石矿石
+tag.btw.ores.quartz=下界石英矿石
+tag.btw.ores.clay=粘土矿石
+
+tag.btw.stone_ores=石头矿石
+tag.btw.netherrack_ores=下界岩矿石
+tag.btw.ores=矿石
+
+tag.btw.ores.raw=原矿块
+tag.btw.piles.ore=矿粉
+
+tag.btw.coals.normal=木炭
+tag.btw.coals=煤炭
+tag.btw.ingots.metal=金属锭
+tag.btw.ingots=锭
+tag.btw.nuggets=粒
+tag.btw.gems=宝石
+
+tag.btw.storage_blocks.ore=矿石存储方块
+tag.btw.storage_blocks.ore.raw=原矿存储方块
+tag.btw.storage_blocks.ore.coals=煤炭存储方块
+
+# Wood
+tag.btw.logs=原木
+
+tag.btw.planks=木板
+tag.btw.wooden_slabs=木台阶
+tag.btw.wooden_sidings=木半板
+tag.btw.wooden_mouldings=木条
+tag.btw.wooden_corners=木边角
+
+tag.btw.high_efficiency_wood_sidings=高效：半板
+tag.btw.high_efficiency_wood_mouldings=高效：条
+tag.btw.high_efficiency_sticks=高效：轴
+
+tag.btw.ladders=梯子
+tag.btw.trapdoors=活板门
+
+tag.btw.barks=树皮
+tag.btw.barks.low_tannin=低单宁树皮
+tag.btw.barks.medium_tannin=中等单宁树皮
+tag.btw.barks.high_tannin=高单宁树皮
+tag.btw.barks.very_high_tannin=极高单宁树皮
+
+tag.btw.sawdusts=锯末
+
+# Stone
+tag.btw.stones=石头
+tag.btw.stone_slabs=石台阶
+tag.btw.stone_stairs=石楼梯
+tag.btw.stone_sidings=石半板
+tag.btw.stone_mouldings=石线条
+tag.btw.stone_corners=石边角
+tag.btw.stone_benches=石长凳
+tag.btw.stone_walls=石墙
+tag.btw.stone_columns=石柱
+tag.btw.stone_pedestals=石基座
+tag.btw.stone_tables=石桌
+
+tag.btw.cobblestones=圆石
+tag.btw.cobblestone slabs=圆石台阶
+tag.btw.cobblestone stairs=圆石楼梯
+tag.btw.cobblestone_walls=圆石墙
+
+tag.btw.mossy_cobblestones=苔圆石
+tag.btw.mossy_cobblestone_walls=苔圆石墙
+
+tag.btw.loose_cobblestones=松散圆石
+tag.btw.loose_cobblestone_slabs=松散圆石台阶
+tag.btw.loose_cobblestone_stairs=松散圆石楼梯
+
+tag.btw.stone_brick_blocks=石砖
+tag.btw.stone_brick_slabs=石砖台阶
+tag.btw.stone_brick_stairs=石砖楼梯
+
+tag.btw.loose_stone_bricks=松散石砖
+tag.btw.loose_stone_brick_slabs=松散石砖台阶
+tag.btw.loose_stone_brick_stairs=松散石砖楼梯
+
+tag.btw.mortar=砂浆
+tag.btw.blocks_with_mortar=带砂浆的方块
+tag.btw.mortarable_blocks=可涂砂浆方块
+
+tag.btw.loose_rocks=松散的石头
+
+tag.btw.bricks=砖块
+tag.btw.bricks.clay=粘土砖
+tag.btw.bricks.nether=地狱砖
+tag.btw.bricks.stone=石砖
+
+tag.btw.sandstone_blocks=沙石块
+tag.btw.quartz_blocks=石英块
+
+tag.btw.terracotta=陶土
+tag.btw.terracotta.colored=彩色陶土
+
+# Soils
+tag.btw.dirts=泥土
+tag.btw.dirt_slabs=泥土台阶
+
+tag.btw.grass blocks=草方块
+tag.btw.grass slabs=草台阶
+
+tag.btw.mycelium_blocks=菌丝块
+tag.btw.mycelium_slabs=菌丝台阶
+
+tag.btw.sands=沙子
+tag.btw.sand_slabs=沙子台阶
+
+tag.btw.gravels=沙砾
+tag.btw.gravel_slabs=沙砾台阶
+
+tag.btw.piles.dirt=一堆泥土
+tag.btw.piles.sand=一堆沙
+tag.btw.piles.gravel=一堆沙砾
+tag.btw.piles.soul_sand=一堆灵魂沙
+tag.btw.piles.soil=一堆土
+
+tag.btw.blights=枯萎病
+
+# Organics
+tag.btw.leaves=树叶
+
+tag.btw.saplings.small=小树苗
+tag.btw.saplings.mature=成熟树苗
+tag.btw.saplings=树苗
+
+tag.btw.seeds=种子
+tag.btw.flowers=花
+tag.btw.grasses=草
+tag.btw.crops=农作物
+
+# Materials
+tag.btw.strings=线
+tag.btw.strings.fine=细线
+
+tag.btw.leathers=皮革
+tag.btw.leathers.whole=完整皮革
+tag.btw.leathers.cut=切割皮革
+tag.btw.leathers.raw=原皮革
+tag.btw.leathers.scoured=光滑皮革
+tag.btw.leathers.tanned=鞣制皮革
+
+tag.btw.books=书
+
+tag.btw.soul_items=承载灵魂的物品
+
+tag.btw.piles=堆
+
+tag.btw.powders=粉末
+
+tag.btw.storage_blocks=存储方块
+
+# Food
+tag.btw.meats=肉类
+tag.btw.meats.raw=生肉
+tag.btw.meats.cooked=熟肉
+tag.btw.meats.hearty=丰盛的肉类
+
+tag.btw.eggs=鸡蛋
+tag.btw.eggs.raw=生鸡蛋
+tag.btw.eggs.cooked=熟鸡蛋
+tag.btw.eggs.whole=全蛋
+
+tag.btw.carrots=胡萝卜
+tag.btw.potatoes=马铃薯
+tag.btw.potatoes.cooked=熟马铃薯
+
+tag.btw.vegetables=蔬菜
+tag.btw.vegetables.raw=生蔬菜
+tag.btw.vegetables.cooked=熟蔬菜
+
+tag.btw.mushrooms=蘑菇
+
+tag.btw.fruits=水果
+
+tag.btw.breads=面包
+
+tag.btw.desserts=甜点
+
+tag.btw.meals=餐点
+tag.btw.meals.raw=未加工餐点
+tag.btw.meals.small=小份餐
+tag.btw.meals.normal=饱腹餐
+tag.btw.meals.hearty=丰盛餐
+
+tag.btw.questionable_foods=可疑食品
+
+tag.btw.foods=食物
+
+# Animal Feed
+tag.btw.wolf_foods=狼食
+tag.btw.wolf_foods.low_quality=低品质狼食
+tag.btw.wolf_foods.high_quality=高品质狼食
+tag.btw.wolf_breeding_foods=狼繁殖食物
+tag.btw.wolf_angering_foods=惹怒狼的食物
+tag.btw.wolf_transforming_foods=兽化催化剂
+
+tag.btw.chicken_foods=鸡食
+tag.btw.chicken_breeding_foods=鸡繁殖食物
+
+tag.btw.pig_foods=猪食
+tag.btw.pig_foods.low_quality=低品质猪食
+tag.btw.pig_foods.high_quality=高品质猪食
+tag.btw.pig_breeding_foods=猪繁殖食物
+
+tag.btw.herbivore_foods=草食动物食物
+tag.btw.herbivore_foods.low_quality=低品质草食动物食物
+tag.btw.herbivore_foods.high_quality=高品质草食动物食物
+
+tag.btw.sheep_breeding_foods=羊繁殖食物
+tag.btw.cow_breeding_foods=牛繁殖食物
+tag.btw.horse_breeding_foods=马繁殖食物
+
+# Tools
+tag.btw.tools=工具
+
+tag.btw.tools.axes=斧
+tag.btw.tools.axes.low_quality=低品质斧
+tag.btw.tools.axes.high_quality=高品质斧
+
+tag.btw.tools.chisels=凿子
+
+tag.btw.tools.firestarters=点火器
+tag.btw.tools.firestarters.low_quality=低品质点火器
+tag.btw.tools.firestarters.high_quality=高品质点火器
+
+tag.btw.tools.fishing_rods=钓鱼竿
+
+tag.btw.tools.hoes=锄头
+tag.btw.tools.hoes.low_quality=低品质锄头
+tag.btw.tools.hoes.high_quality=高品质锄头
+
+tag.btw.tools.pickaxes=镐
+tag.btw.tools.pickaxes.low_quality=低品质镐
+tag.btw.tools.pickaxes.high_quality=高品质镐
+
+tag.btw.tools.shears=剪刀
+
+tag.btw.tools.shovels=铲
+tag.btw.tools.shovels.low_quality=低品质铲
+tag.btw.tools.shovels.high_quality=高品质铲
+
+tag.btw.tools.weapons=武器
+tag.btw.tools.weapons.bows=弓
+tag.btw.tools.weapons.melee=近战武器
+tag.btw.tools.weapons.melee.clubs=棍棒
+tag.btw.tools.weapons.melee.swords=剑
+
+tag.btw.arrows=箭
+tag.btw.arrows.low_quality=低品质箭
+tag.btw.arrows.high_quality=高品质箭
+
+tag.btw.tool_handles=工具柄
+tag.btw.tool_handles.low_quality=低品质工具柄
+tag.btw.tool_handles.high_quality=高品质工具柄
+
+tag.btw.fishing_hooks=鱼钩
+tag.btw.fishing_bait=鱼饵
+
+# Armor
+tag.btw.armor=盔甲
+
+tag.btw.armor.light=轻型盔甲
+tag.btw.armor.heavy=重型盔甲
+tag.btw.armor.hybrid=混合型盔甲
+tag.btw.armor.ultra_heavy=超重型盔甲
+
+tag.btw.armor.wool=羊毛盔甲
+tag.btw.armor.padded=衬垫盔甲
+tag.btw.armor.leather=皮革盔甲
+tag.btw.armor.tanned_leather=鞣制皮革盔甲
+tag.btw.armor.gimp=紧身服
+tag.btw.armor.chain=锁链甲
+tag.btw.armor.iron=铁质盔甲
+tag.btw.armor.gold=金质盔甲
+tag.btw.armor.diamond=钻石盔甲
+tag.btw.armor.steel=钢制盔甲
+
+tag.btw.armor.boots=靴子
+tag.btw.armor.leggings=护腿
+tag.btw.armor.chestplates=胸甲
+tag.btw.armor.helmets=头盔
+
+tag.btw.armor_plates=装甲板
+
+# Misc Equipment
+tag.btw.arcane_scrolls=奥术卷轴
+tag.btw.potions=药水
+
+# Decorative
+tag.btw.candles=蜡烛
+tag.btw.metal_bars=金属杆
+
+tag.btw.vases=花瓶
+tag.btw.vases.colored=彩色花瓶
+
+# Functional Blocks
+tag.btw.bark_boxes=树皮盒子
+
+tag.btw.torches=火把
+tag.btw.torches.finite=粗制火把
+tag.btw.torches.infinite=永恒火把
+tag.btw.torches.unlit=未点燃的火把
+tag.btw.torches.lit=点燃的火把
+tag.btw.torches.coal=煤炭火把
+
+tag.btw.chopping_blocks=劈砍台
+
+tag.btw.unfired_pottery=生坯
+tag.btw.planters=种植盆
+
+tag.btw.buttons=按钮
+tag.btw.buttons.wooden=木制按钮
+tag.btw.buttons.stone=石制按钮
+
+tag.btw.pressure_plates=压力板
+tag.btw.pressure_plates.wooden=木制压力板
+tag.btw.pressure_plates.stone=石制压力板
+tag.btw.pressure_plates.metal=金属压力板
+
+tag.btw.rails=铁轨
+tag.btw.rails.detector=检测铁轨
+tag.btw.rails.detector.wooden=木制检测铁轨
+tag.btw.rails.detector.stone=石制检测铁轨
+tag.btw.rails.detector.metal=金属检测铁轨
+
+# Mechanical Power
 tag.btw.requires_mechanical_power=需要机械动力
 tag.btw.transmits_mechanical_power=传递机械动力
 tag.btw.generates_mechanical_power=产生机械动力
-tag.btw.pickaxes=镐
-tag.btw.hoes=锄
-tag.btw.foods=食物
-tag.btw.bark_boxes=树皮盒子
 
+# Hopper Filtering
+tag.btw.hopper_filters=漏斗过滤器
+tag.btw.hopper_filters.soul=灵魂过滤器
+tag.btw.hopper_filters.powdery=粉末过滤器
+tag.btw.hopper_filters.thin=细过滤器
+tag.btw.hopper_filters.small=小型过滤器
+tag.btw.hopper_filters.narrow=窄型过滤器
+tag.btw.hopper_filters.stackable=可堆叠过滤器
+tag.btw.hopper_filters.items=物品过滤器
+
+tag.btw.filtered_as_powder=作为粉末过滤
+tag.btw.filtered_as_thin=作为细粉过滤
+tag.btw.filtered_as_small=作为小颗粒过滤
+tag.btw.filtered_as_narrow=作为窄颗粒过滤
+tag.btw.filtered_as_stackable=作为可堆叠过滤
+tag.btw.filtered_as_items=作为物品过滤
+
+# Bellows Sorting
+tag.btw.long_blow_distance=长吹程
+tag.btw.medium_blow_distance=中等吹程
+tag.btw.short_blow_distance=短吹程
+
+# Buoyancy
+tag.btw.buoyant=有浮力
+tag.btw.neutral_buoyancy=中性浮力
+
+# Wildcards
 tag.wildcard.Arcane Scroll.22479=奥术卷轴
 tag.wildcard.Black Stone Siding.178=黑石部件
 tag.wildcard.candle.black.22602=蜡烛
 tag.wildcard.Blight.180=枯萎病
 tag.wildcard.Brick Siding.186=砖块部件
 tag.wildcard.Carpet.171=地毯
-tag.wildcard.Chewed Log.1010=砍伐过的原木
+tag.wildcard.Chewed Log.1010=啃过的原木
 tag.wildcard.Coal.263=煤炭
 tag.wildcard.Cobblestone Slab.1123=圆石台阶
 tag.wildcard.Cobblestone Wall.139=圆石墙
@@ -401,7 +752,7 @@ tag.wildcard.Cobblestone.4=圆石
 tag.wildcard.Companion Cube.237=挚友方块
 tag.wildcard.Dirt Slab.206=泥土台阶
 tag.wildcard.Golden Apple.322=金苹果
-tag.wildcard.Gravel Slab.175=沙砾台阶
+tag.wildcard.Gravel Slab.175=砂砾台阶
 tag.wildcard.Ink Sac.351=染料
 tag.wildcard.Loose Cobblestone Slab.1022=松散圆石台阶
 tag.wildcard.Loose Cobblestone.1021=松散圆石
@@ -417,10 +768,10 @@ tag.wildcard.Jungle Sapling.1161=丛林树苗
 tag.wildcard.Oak Sapling.1158=橡树苗
 tag.wildcard.Old Oak Sapling.6=旧橡树苗
 tag.wildcard.Spruce Sapling.1159=云杉树苗
-tag.wildcard.Oak Wood Bench.200=木装饰
-tag.wildcard.Oak Wood Bench.199=木装饰
-tag.wildcard.Oak Wood Corner.198=木边角
-tag.wildcard.Oak Wood Moulding.197=木半板
+tag.wildcard.Oak Wood Bench.200=木制长凳
+tag.wildcard.Oak Wood Bench.199=木制长凳
+tag.wildcard.Oak Wood Corner.198=木制边角
+tag.wildcard.Oak Wood Moulding.197=木制条
 tag.wildcard.Oak Wood Siding.196=木半板
 tag.wildcard.Oak Wood Planks.5=木板
 tag.wildcard.Oak Wood Slab.126=木台阶
@@ -450,17 +801,17 @@ tag.wildcard.Stone Slab.44=石台阶2
 tag.wildcard.Unfired Crucible.252=生坯
 tag.wildcard.Vine Trap.213=藤蔓陷阱
 tag.wildcard.Water Bottle.373=药水
-tag.wildcard.White Stained Clay.159=染色黏土
+tag.wildcard.White Stained Clay.159=染色粘土
 tag.wildcard.White Stone Siding.191=白石部件
 tag.wildcard.Wool Slab.220=羊毛台阶
 tag.wildcard.Wool.35=羊毛块
-tag.wildcard.tile.fcBlockLogDamagedBirch.name.3207=损坏的白桦
+tag.wildcard.tile.fcBlockLogDamagedBirch.name.3207=损坏的白桦木
 tag.wildcard.tile.fcBlockLogDamagedJungle.name.3208=损坏的丛林木
-tag.wildcard.tile.fcBlockLogDamagedSpruce.name.3206=损坏的云杉
+tag.wildcard.tile.fcBlockLogDamagedSpruce.name.3206=损坏的云杉木
 tag.wildcard.tile.fcBlockWoodOakSiding.siding.name.184=木半板1
-tag.wildcard.tile.fcStoneBrickSiding.blackstone.siding.name.1143=黑石砖面板
-tag.wildcard.tile.fcWoodBloodSiding.siding.name.1007=木面板2
-tag.wildcard.tile.fcStoneBrickSiding.deepslate.siding.name.1139=深板岩砖面板
+tag.wildcard.tile.fcStoneBrickSiding.blackstone.siding.name.1143=黑曜石石砖
+tag.wildcard.tile.fcWoodBloodSiding.siding.name.1007=木半板2
+tag.wildcard.tile.fcStoneBrickSiding.deepslate.siding.name.1139=深板岩石砖
 tag.wildcard.tile.null.default.name.155=地狱石英块
 tag.wildcard.Black Candle.22602=蜡烛
 tag.wildcard.Black Wool.2551=羊毛
