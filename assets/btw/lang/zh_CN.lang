@@ -49,6 +49,7 @@ tile.fcBlockUnfiredPottery.urn.name=瓮生坯
 tile.fcBlockUnfiredPottery.mould.name=模具生坯
 tile.fcBlockCrucible.name=坩埚
 tile.fcBlockPlanter.name=种植盆
+tile.fcBlockPlanter.soulSand.name=灵魂沙种植盆
 tile.fcBlockVase.name=花瓶
 tile.fcBlockDetectorRailWood.name=空载探测铁轨
 tile.fcBlockDetectorRailSoulforgedSteel.name=重载探测铁轨
@@ -180,6 +181,8 @@ tile.fcBlockSilverfishStoneChiseled.blackstone.name=虫蚀錾制黑石砖
 tile.fcBlockClay.name=粘土矿
 tile.fcBlockGrassSlab.name=草台阶
 tile.fcBlockBedroll.name=地铺
+tile.fcBlockBedrollOld.name=旧地铺
+tile.fcBlockBed.name=床
 tile.fcBlockSpiderEye.name=蜘蛛眼块
 tile.fcBlockSpiderEyeSlab.name=蜘蛛眼台阶
 tile.fcBlockSaplingOak.name=橡树幼苗
@@ -417,12 +420,7 @@ tile.fcBlockJackOLantern.name=南瓜灯
 
 # Vanilla Blocks Renamed
 
-tile.dirt.name=泥土
-tile.sand.name=沙子
-tile.fence.name=橡木栅栏
-tile.rose.name=玫瑰
-tile.flower.name=蒲公英
-tile.detectorRail.name=轻载探测铁轨
+tile.fence.name=旧橡木栅栏
 tile.tnt.name=炸药桶
 tile.mushroom.name=旧蘑菇
 tile.anvil.intact.name=废铁砧
@@ -433,9 +431,10 @@ tile.stoneSlab.quartz.name=石英台阶
 tile.quartzBlock.default.name=石英块
 tile.quartzBlock.chiseled.name=錾制石英
 tile.quartzBlock.lines.name=石英柱
-tile.pumpkin.name=雕刻南瓜
+tile.pumpkin.name=旧雕刻南瓜
 tile.wood.blood.name=血木木板
 tile.woodSlab.blood.name=血木台阶
+tile.bed.name=旧床
 
 tile.litpumpkin.name=旧南瓜灯
 
@@ -492,6 +491,9 @@ tile.sapling.jungleMature.name=旧成熟丛林树苗
 
 tile.netherrack.name=地狱岩
 tile.portal.name=地狱传送门
+
+tile.ice.natural.name=自然冰
+tile.ice.artificial.name=冰
 
 # BTW Items
 
@@ -632,6 +634,7 @@ item.fcItemBatWing.name=蝙蝠翅膀
 item.fcItemDungGolden.name=黄金粪便
 item.fcItemPileSoulSand.name=小堆灵魂沙
 item.fcItemPileEmerald.name=小堆绿宝石粉
+item.fcItemPileDiamond.name=小堆钻石粉
 item.fcItemRedstoneLatch.name=红石闩
 item.fcItemNuggetSteel.name=熔魂钢粒
 item.fcItemWool.name=羊毛
@@ -849,6 +852,7 @@ key.special=替代使用
 
 # Chat Messages
 
+message.warning=[WARNING]: %1$s
 item.fcItemWaterWheel.placementObstructed=水车放置被某物或你自己挡住了
 item.fcItemWaterWheel.notEnoughRoom=没有足够的空间放置水车
 message.windMill.placementObstructed=风车放置被某物或你自己挡住了
@@ -866,9 +870,9 @@ item.enchantedBook.languageUnfamiliar=你不熟悉这段文字的语言
 message.death.newSpawn=你被抛向了风中...
 message.death.newSpawnNearPlayers=你被抛向了风中，但似乎有人在附近...
 message.death.oldSpawn=这个地方感觉很熟悉...
+message.worldSpawn.failed=无法创建有效的世界出生点。请使用不同的种子创建一个新世界，或自行承担风险继续游戏。
 chat.type.local=[本地] <%s> %s
 chat.type.global=[全局] <%s> %s
-commands.global.usage=/g 或 /global <你的消息 ...>
 
 # Death Messages
 
@@ -912,6 +916,17 @@ commands.difficulty.unknown=未识别的难度模式
 commands.difficulty.current=当前难度模式是
 commands.difficulty.set=将难度模式设置为
 
+commands.global.usage=/g 或 /global <你的消息 ...>
+
+command.serverLoc.current=当前位置
+command.serverLoc.usage=/loc
+
+command.time.currentWorldTime=当前世界时间
+commands.time.totalWorldTime=世界总时间
+
+commands.setworldspawn.usage=/setworldspawn 或 /setworldspawn <x> <y> <z>
+commands.setworldspawn.success=将世界出生点设置为 (%d, %d, %d)
+
 # Menu strings
 
 selectWorld.difficulty=难度
@@ -936,27 +951,27 @@ options.lock_difficulty.warning=你确定要锁定这个世界的难度吗？你
 
 options.borderlessFullscreen=无边框全屏
 
-difficulty.standard.name=标准
-difficulty.standard.description=标准体验。
-difficulty.standard.description2=推荐给寻求
-difficulty.standard.description3=适度挑战的玩家。
+difficulty.btw.standard.name=标准
+difficulty.btw.standard.description=标准体验。
+difficulty.btw.standard.description2=推荐给寻求
+difficulty.btw.standard.description3=适度挑战的玩家。
 
-difficulty.relaxed.name=轻松
-difficulty.relaxed.description=更轻松的体验。
-difficulty.relaxed.description2=推荐给寻求
-difficulty.relaxed.description3=较低生存压力的玩家。
+difficulty.btw.relaxed.name=轻松
+difficulty.btw.relaxed.description=更轻松的体验。
+difficulty.btw.relaxed.description2=推荐给寻求
+difficulty.btw.relaxed.description3=较低生存压力的玩家。
 
-difficulty.hostile.name=困难
-difficulty.hostile.description=难度更高的体验。
-difficulty.hostile.description2=推荐给寻求
-difficulty.hostile.description3=最高挑战的玩家。
+difficulty.btw.hostile.name=敌对
+difficulty.btw.hostile.description=难度更高的体验。
+difficulty.btw.hostile.description2=推荐给寻求
+difficulty.btw.hostile.description3=最高挑战的玩家。
 
-difficulty.hostile_restricted.name=困难
+difficulty.btw.hostile_restricted.name=敌对
 
-difficulty.classic.name=经典
-difficulty.classic.description=经典MC加入BTW元素的体验。
-difficulty.classic.description2=让BTW回归本源。
-difficulty.classic.description3=生存挑战较少。
+difficulty.btw.classic.name=经典
+difficulty.btw.classic.description=经典MC加入BTW元素的体验。
+difficulty.btw.classic.description2=让BTW回归本源。
+difficulty.btw.classic.description3=生存挑战较少。
 
 # Attributes
 
@@ -1039,6 +1054,9 @@ achievement.btw.find_string.desc=从蜘蛛身上获取一些线
 
 achievement.btw.craft_bedroll=晚安！
 achievement.btw.craft_bedroll.desc=制作地铺来快速度过夜晚
+
+achievement.btw.place_tool=插入
+achievement.btw.place_tool.desc=按住 Ctrl 键并右键合适的方块，以将工具放置在其表面
 
 achievement.btw.craft_stone_shovel=天天铲不停
 achievement.btw.craft_stone_shovel.desc=获得一把石铲
@@ -1205,7 +1223,10 @@ achievement.btw.locate_fortress_with_pile=要塞的低语
 achievement.btw.locate_fortress_with_pile.desc=使用小堆灵魂沙定位地狱附近的要塞
 
 achievement.btw.use_emerald_pile=闪闪发光的指南针
-achievement.btw.use_emerald_pile.desc=使用绿宝石粉定位主世界附近的村庄
+achievement.btw.use_emerald_pile.desc=使用小堆绿宝石粉定位主世界附近的村庄
+
+achievement.btw.use_diamond_pile=寻宝之路
+achievement.btw.use_diamond_pile.desc=使用小堆钻石粉来定位主世界附近的丛林神庙和女巫小屋
 
 achievement.btw.craft_nether_coal=永恒之光
 achievement.btw.craft_nether_coal.desc=获得地狱煤
@@ -1227,6 +1248,9 @@ achievement.btw.spin_pottery.desc=在螺杆旋转台上把粘土制成陶坯
 
 achievement.btw.craft_crucible=废品回收！
 achievement.btw.craft_crucible.desc=在砖窑中烧制坩埚生坯来获得坩埚
+
+achievement.btw.craft_planter=无杂草种植麻？！
+achievement.btw.craft_planter.desc=在种植盆里放入疏松的土壤，就可以种植作物而且不会长杂草。
 
 achievement.btw.craft_urn=准备收容！
 achievement.btw.craft_urn.desc=在窑炉中烧制未烧制的瓮来获得瓮
@@ -1292,6 +1316,9 @@ achievement.btw.make_companion_cube.desc=把狼变成挚友方块
 
 achievement.btw.make_companion_slab=你更小了，伙计
 achievement.btw.make_companion_slab.desc=把挚友方块切成台阶
+
+achievement.btw.poke_companion=值得信赖的朋友
+achievement.btw.poke_companion.desc=让你的挚友帮你保管剑。
 
 achievement.btw.traded_with_blacksmith=初识铁匠
 achievement.btw.traded_with_blacksmith.desc=和一名铁匠交易
@@ -1440,3 +1467,9 @@ achievement.btw.possess_villager.desc=附身一名村民
 # Activate a tier 4 diamond / emerald / soulforge beacon. soulforge could also be the final achievement in main line
 # get a rare sheep mutation proc
 # toss the milk
+
+tile.dirt.name=泥土
+tile.sand.name=沙子
+tile.rose.name=玫瑰
+tile.flower.name=蒲公英
+tile.detectorRail.name=轻载探测铁轨
