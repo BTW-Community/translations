@@ -951,27 +951,27 @@ options.lock_difficulty.warning=你确定要锁定这个世界的难度吗？你
 
 options.borderlessFullscreen=无边框全屏
 
-difficulty.standard.name=标准
-difficulty.standard.description=标准体验。
-difficulty.standard.description2=推荐给寻求
-difficulty.standard.description3=适度挑战的玩家。
+difficulty.btw.standard.name=标准
+difficulty.btw.standard.description=标准体验。
+difficulty.btw.standard.description2=推荐给寻求
+difficulty.btw.standard.description3=适度挑战的玩家。
 
-difficulty.relaxed.name=轻松
-difficulty.relaxed.description=更轻松的体验。
-difficulty.relaxed.description2=推荐给寻求
-difficulty.relaxed.description3=较低生存压力的玩家。
+difficulty.btw.relaxed.name=轻松
+difficulty.btw.relaxed.description=更轻松的体验。
+difficulty.btw.relaxed.description2=推荐给寻求
+difficulty.btw.relaxed.description3=较低生存压力的玩家。
 
-difficulty.hostile.name=困难
-difficulty.hostile.description=难度更高的体验。
-difficulty.hostile.description2=推荐给寻求
-difficulty.hostile.description3=最高挑战的玩家。
+difficulty.btw.hostile.name=敌对
+difficulty.btw.hostile.description=难度更高的体验。
+difficulty.btw.hostile.description2=推荐给寻求
+difficulty.btw.hostile.description3=最高挑战的玩家。
 
-difficulty.hostile_restricted.name=困难
+difficulty.btw.hostile_restricted.name=敌对
 
-difficulty.classic.name=经典
-difficulty.classic.description=经典MC加入BTW元素的体验。
-difficulty.classic.description2=让BTW回归本源。
-difficulty.classic.description3=生存挑战较少。
+difficulty.btw.classic.name=经典
+difficulty.btw.classic.description=经典MC加入BTW元素的体验。
+difficulty.btw.classic.description2=让BTW回归本源。
+difficulty.btw.classic.description3=生存挑战较少。
 
 # Attributes
 
