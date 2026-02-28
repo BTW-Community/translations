@@ -13,7 +13,7 @@ key.emi.favorite=Ghi nhớ
 key.emi.set_default=Đặt làm mặc định
 key.emi.default_stack=Stack mặc định
 key.emi.view_stack_tree=Xem Stack Tree
-key.emi.view_tree=View Tree
+key.emi.view_tree=Xem sơ đồ
 key.emi.back=Trang trước
 key.emi.forward=Trang sau
 key.emi.craft_one=Chế tạo một
@@ -70,15 +70,15 @@ emi.effect_location.right=Phải
 emi.effect_location.right=Phải
 emi.effect_location.hidden=Ẩn
 emi.recipe_book_action.default=Mặc định
-emi.recipe_book_action.toggle_craftables=Toggle Craftables
-emi.recipe_book_action.toggle_visibility=Toggle Visibility
+emi.recipe_book_action.toggle_craftables=Thay đổi giữa có thể chế tạo
+emi.recipe_book_action.toggle_visibility=Thay đổi trạng thái hiển thị
 
 config.emi.group.general=Tổng quan
 config.emi.group.general.search=Tìm kiếm
 config.emi.group.ui=Giao diện
 config.emi.group.ui.mod_id=Mod ID
-config.emi.group.ui.recipe_screen=Recipe Screen
-config.emi.group.ui.recipe_buttons=Recipe Buttons
+config.emi.group.ui.recipe_screen=Màn hình công thức
+config.emi.group.ui.recipe_buttons=Phím công thức
 config.emi.group.ui.left_sidebar=Bảng bên trái
 config.emi.group.ui.right_sidebar=Bảng bên phải
 config.emi.group.ui.top_sidebar=Bảng bên trên
@@ -101,11 +101,11 @@ config.emi.general.simulate_nei_lag=[retroEMI] Mô phỏng NEI Lag
 config.emi.ui.effect_location=Vị trí hiệu ứng
 config.emi.ui.center_search_bar=Đặt thanh tìm kiếm ở giữa
 config.emi.ui.show_hover_overlay=Hiển thị hiệu ứng con trỏ
-config.emi.ui.append_mod_id=Append Mod ID
-config.emi.ui.append_item_mod_id=Append Item Mod ID
+config.emi.ui.append_mod_id=Xem ID mod
+config.emi.ui.append_item_mod_id=Xem ID vật phẩm mod
 config.emi.ui.recipe_book_action=Recipe Book Action
 config.emi.ui.search_sidebar_focus=Khi thanh bên tìm kiếm được chọn
-config.emi.ui.empty_search_sidebar_focus=Empty Search Sidebar Focus
+config.emi.ui.empty_search_sidebar_focus=Loại sidebar khi thanh tìm kiếm EMI trống 
 
 config.emi.ui.left_sidebar_pages=Hiển thị
 config.emi.ui.left_sidebar_subpanels=Bảng con
@@ -139,30 +139,30 @@ config.emi.ui.bottom_sidebar_align=Căn chỉnh
 config.emi.ui.bottom_sidebar_header=Đầu bảng
 config.emi.ui.bottom_sidebar_theme=Nền
 
-config.emi.ui.vertical_margin=Vertical Margin
-config.emi.ui.minimum_recipe_screen_width=Minimum Recipe Screen Width
+config.emi.ui.vertical_margin=Căn lề trên
+config.emi.ui.minimum_recipe_screen_width=Độ dài màn hình công thức tối thiểu
 config.emi.ui.workstation_location=Vị trí nơi chế tạo
-config.emi.ui.miscraft_prevention=Miscraft Prevention
-config.emi.ui.fluid_unit=Fluid Unit
+config.emi.ui.miscraft_prevention=Chống chế tạo nhầm
+config.emi.ui.fluid_unit=Đơn vị chất lỏng
 config.emi.ui.show_cost_per_batch=Hiểm thị số item tiêu thụ theo lô
 config.emi.ui.recipe_default_button=Phím công thức mặc định
-config.emi.ui.recipe_tree_button=Phím cây công thức
+config.emi.ui.recipe_tree_button=Phím sơ đồ công thức
 config.emi.ui.recipe_fill_button=Phím thêm nguyên liệu
 config.emi.ui.recipe_screenshot_button=Phím chụp màn hình công thức
 config.emi.ui.recipe_screenshot_scale=Tỉ lệ ảnh chụp màn hình công thức
 config.emi.ui.use_batched_renderer=Sử dụng Batched Renderer
 
 config.emi.dev.dev_mode=Chế độ nhà phát triển
-config.emi.dev.edit_mode=Edit Mode
+config.emi.dev.edit_mode=Chế độ chỉnh sửa
 config.emi.dev.log_untranslated_tags=Hiển thị các phân loại vật phẩm chưa được dịch
 config.emi.dev.log_non_tag_ingredients=Hiển thị các vật phẩm chưa được phân loại
 config.emi.dev.show_recipe_ids=Hiển thị ID của công thức chế tạo
 config.emi.dev.highlight_defaulted=Highlight mặc định
 config.emi.dev.highlight_exclusion_areas=Highlight Exclusion Areas
 
-config.emi.presets.sidebars=Sidebars
+config.emi.presets.sidebars=Thanh bên
 config.emi.presets.binds=Gán phím
-config.emi.presets.restore=Restore
+config.emi.presets.restore=Khôi phục
 
 config.emi.presets.btw_default=Mặc định BTW
 config.emi.presets.old_default=Mặc định cũ
@@ -172,14 +172,14 @@ config.emi.presets.recipe_book_plus=Sách công thức mở rộng
 
 config.emi.presets.author_binds=Author Binds
 
-config.emi.presets.backup=Restore Backup
-config.emi.presets.defaults=Restore Defaults
+config.emi.presets.backup=Khôi phục sao lưu
+config.emi.presets.defaults=Khôi phục mặc định
 
 config.emi.presets.empty_search_craftable=Empty Search Craftable
 
-emi.unit.liters=Liters
+emi.unit.liters=Lít
 emi.unit.millibuckets=Millibuckets
-emi.unit.droplets=Droplets
+emi.unit.droplets=Giọt
 emi.fluid.amount.liters=%s L
 emi.fluid.amount.millibuckets=%smB
 emi.fluid.amount.droplets=%s d
@@ -196,33 +196,33 @@ emi.inapplicable=Bàn làm việc hiện tại không được hỗ trợ công 
 emi.not_enough_ingredients=Không đủ nguyên liệu để chế tạo
 emi.too_small=Lưới chế tạo quá nhỏ để chứa các nguyên liệu
 emi.favorite_recipe=Bấm %s để ghi nhớ công thức
-emi.resolve.resolve=Bấm %s để sử dụng cây công thức này
+emi.resolve.resolve=Bấm %s để sử dụng sơ đồ công thức này
 emi.resolve.default=Bấm %s để trở về mặc định cho tất cả công thức
 emi.page=Trang %s trên %s
 emi.page.short=%s/%s
-emi.total_cost=Total Cost
-emi.cost_per=Cost per batch:
+emi.total_cost=Tổng hao tốn
+emi.cost_per=Hao tổn mỗi mẻ:
 emi.leftovers=Còn dư 
 emi.view_all_recipes=Bấm để xem tất cả các công thức chế tạo
 emi.tree_welcome=Chào mừng bạn đến với %s
 emi.no_tree=Bạn vẫn chưa đặt công thức vào đây để xem...
 emi.random_tree=Nếu bạn muốn xem một công thức ngẫu nhiên
 emi.random_tree_input=Hãy bấm §6[ctrl + r]
-emi.edit_mode.hide_one=Press %s to hide stack
-emi.edit_mode.hide_all=Press %s to hide stacks by ID
+emi.edit_mode.hide_one=Bấm %s để ẩn stack
+emi.edit_mode.hide_all=Bấm %s để ẩn stack dựa trên ID
 tooltip.emi.chance.consume=Consumption chance: %s%%
 tooltip.emi.chance.produce=Production chance: %s%%
-tooltip.emi.accepts=Accepts:
-tooltip.emi.fill_recipe=Fill Recipe
-tooltip.emi.fill_recipe_no_server=Cannot Fill Recipe without EMI on server
-tooltip.emi.set_default=Set as default recipe
-tooltip.emi.current_defaults=Currently the default recipe for:
-tooltip.emi.unset_default=Remove as default recipe
-tooltip.emi.set_default_stack=Press %s on an output to set default recipe for that stack
+tooltip.emi.accepts=Đồng ý:
+tooltip.emi.fill_recipe=Thêm nguyên liệu vào
+tooltip.emi.fill_recipe_no_server=Không thể thêm nguyên liệu vào vì server không có EMI
+tooltip.emi.set_default=Thêm vào công thức mặc định
+tooltip.emi.current_defaults=Công thức mặc định hiện tại là:
+tooltip.emi.unset_default=Xóa công thức mặc định
+tooltip.emi.set_default_stack=Bấm %s vào một đầu ra để thiết lập công thức mặc định cho stack đó
 tooltip.emi.view_tree=Xem sơ đồ công thức
 tooltip.emi.recipe_screenshot=Chụp màn hình công thức
 tooltip.emi.resolution=Resolving recipe tree for ingredient
-tooltip.emi.select_resolution=Click a §6recipe's output§r to assign for §dthis§r recipe tree
+tooltip.emi.select_resolution=Bấm vào §6đầu ra của công thức§r thể thêm §dnó§r vào sơ đồ
 tooltip.emi.default_resolution=Click the §6recipe default button§r to assign for §aall§r recipe trees
 tooltip.emi.clear_resolution=Click §6here§r to §cclear§r resolution
 
@@ -232,20 +232,19 @@ tooltip.emi.recipe_tree=Sơ đồ công thức
 
 tooltip.emi.config.global=Toggle using a global EMI config between all game instances instead of a separate config per game instance./n§cNot Yet Implemented§r
 
-tooltip.emi.synfav.uncraftable=Unable to craft §cany§r batches
-tooltip.emi.synfav.partially_craftable=Able to craft §dsome§r batches
-tooltip.emi.synfav.fully_craftable=Able to craft §aall %s§r batches
+tooltip.emi.synfav.uncraftable=Không thể chế tạo §cbất kì§r mẻ nào
+tooltip.emi.synfav.partially_craftable=Có thể chế tạo §dvài§r mẻ
+tooltip.emi.synfav.fully_craftable=Có thể chế tạo §acả thảy %s§r luôn
 tooltip.emi.synfav.craft_some=Bấm %s để sử dụng hết nguyên liệu đang có
-tooltip.emi.synfav.craft_all=Press %s to craft all §9%s§r batches
+tooltip.emi.synfav.craft_all=Bấm %s để chế tạo §9%s§r cả thảy
 
 tooltip.emi.recipe_remainder=Additionally gives:
 
 tooltip.emi.bom.batch_size=Batch size: %s/nScroll to adjust/nHold §6[shift]§r to adjust by 16
 tooltip.emi.bom.batch_size.ideal=Bấm %s để giảm thiểu phần dư thừa
 tooltip.emi.bom.mode.view=§6Đang xem§r Sơ đồ công thức
-tooltip.emi.bom.mode.craft=§6Crafting§r recipe tree/nProgress will be shown in recipe tree/n§bSynthetic favorites§r added to sidebar
-tooltip.emi.bom.help=Cây công thức hiển thị quá trình chế tạo và nguyên liệu cần có./nBạn có thể kéo và phóng to, thu nhỏ phần hiển thị/nNhấp chuột trái vào một giao điểm để chọn công thức gán cho nó./nGiữ §6[shift]§r dể tự động chọn công thức dựa trên vật phẩm trong túi đồ của bạn./nNhấp chuột phải vào một điểm giao công thức để tạm thời thu gọn nó./nGiữ §6[shift]§r để xóa công thức khỏi cây công thức đấy.
-# The initial tree state is controlled by default recipes/nA button next to recipes can set default recipe preferences/n/nThe toggle by total cost can be used to help craft a recipe tree/nWhile crafting materials that need to be collected will be displayed/n§bSynthetic favorites§r will be added to the favorites sidebar that/nwill show incomplete steps and can be used to craft
+tooltip.emi.bom.mode.craft=Sơ đồ §6công thức§r/nCác tiến trình sẽ hiển thị trên sơ đồ công thức/n§bCác công thức yêu thích§r tự thêm vào sidebar
+tooltip.emi.bom.help=Sơ đồ công thức hiển thị quá trình chế tạo và nguyên liệu cần có./nBạn có thể kéo và phóng to, thu nhỏ phần hiển thị/nNhấp chuột trái vào một giao điểm để chọn công thức gán cho nó./nGiữ §6[shift]§r dể tự động chọn công thức dựa trên vật phẩm trong túi đồ của bạn./nNhấp chuột phải vào một điểm giao công thức để tạm thời thu gọn nó./nGiữ §6[shift]§r để xóa công thức khỏi sơ đồ công thức đấy.
 
 screen.emi.recipe=Công thức
 screen.emi.config=Tùy chỉnh
@@ -303,7 +302,7 @@ emi.world_interaction.btw.sawdust_from_chiseling=§6Lần đục thứ 3 và th�
 
 # EMI Commands
 
-commands.emi.usage=Allows viewing recipes, the recipe tree, adding a tree goal, and adding a tree resolution. Not yet implemented.
+commands.emi.usage=Cho phép xem công thức, sơ đồ công thức, thành phẩm cuối cùng tại sơ đồ. Nhưng lệnh này chưa được thêm vào.
 commands.emi.nyi=This command is not yet implemented
 commands.emi.id=Requires a recipe ID.
 
@@ -327,12 +326,13 @@ emi.category.btw.turntable=Bàn xoay
 emi.category.btw.campfire=Lửa trại
 emi.category.btw.trading=Trao đổi
 emi.category.btw.progressive=Chế tạo chậm
+emi.category.btw.hopper_filtering=Phễu lọc
 
 emi.category.emi.tag=Phân loại
 emi.category.emi.ingredient=Nguyên liệu
 emi.category.btw.food=Thức ăn
 
-alias.emi.workbench=Workbench
+alias.emi.workbench=Chế tạo bằng
 alias.emi.crafting_table=Bàn chế tạo
 alias.emi.stick=Stick
 alias.emi.tnt=TNT
@@ -340,65 +340,405 @@ alias.emi.cauldron=Vạc
 
 # EMI Tags
 
-tag.btw.seeds=Hạt giống
-tag.btw.shears=Kéo
-tag.btw.mossy_cobblestones=Đá cuội phủ rêu
-tag.btw.loose_rocks=Đá dăm
-tag.btw.mortar=Vữa
-tag.btw.logs=Gỗ
-tag.btw.cobblestones=Đá cuội
-tag.btw.strings_and_hemp=Sợi
-tag.btw.coal_ores=Quặng than
-tag.btw.iron_ores=Quặng sắt
-tag.btw.chisels=Cái đục
-tag.btw.quartz_blocks=Thạch anh
-tag.btw.diamond_ores=Quặng kim cương
-tag.btw.wood_corners=Phào góc gỗ
-tag.btw.planks=Ván gỗ
-tag.btw.coals=Than
-tag.btw.lapis_ores=Quặng ngọc lưu ly
-tag.btw.high_quality_axes=Rìu loại tốt
-tag.btw.cooked_meats=Thịt chín
-tag.btw.hearty_meats=Thịt thượng hạng
-tag.btw.fishing_hooks=Móc câu
-tag.btw.raw_meats=Thịt sống
-tag.btw.gold_ores=Quặng vàng
-tag.btw.emerald_ores=Quặng ngọc lục bảo
-tag.btw.redstone_ores=Quặng đá đỏ
-tag.btw.low_quality_axes=Rìu loại rởm
-tag.btw.barks=Vỏ cây
-tag.btw.sandstone_blocks=Sa thạch
-tag.btw.empty=Nếu bạn thấy dòng này tức là nó đang bị lỗi!
-tag.btw.strings=Sợi khởi đầu
-tag.btw.leathers=Da
-tag.btw.candles=Nến
-tag.btw.tanned_leathers=Da thuộc
-tag.btw.axes=Rìu
-tag.btw.scoured_leathers=Da được làm sạch
-tag.btw.stone_brick_items=Gạch đá
-tag.btw.wood_mouldings=Phào chỉ gỗ
-tag.btw.wood_sidings=Ván ốp gỗ
-tag.btw.wool_blocks=Khối len
-tag.btw.colored_wools=Len màu
-tag.btw.colored_knit_wools=Vải len màu
-tag.btw.colored_wool_blocks=Khối len màu
-tag.btw.colored_wool_slab_blocks=Phiên len màu
+tag.btw.empty=Trống
+
+# Wool
 tag.btw.wools=Cuộn len
+tag.btw.wools.colored=Cuộn len màu
 tag.btw.knit_wools=Vải len
+tag.btw.knit_wools.colored=Vải len màu
 tag.btw.wool_blocks=Khối len
-tag.btw.wool_slab_blocks=Phiến len
-tag.btw.firestarters=Dụng cụ đánh lửa
-tag.btw.weapons=Vũ khí
-tag.btw.shovels=Xẻng
-tag.btw.requires_mechanical_power=Cần được truyền động
-tag.btw.transmits_mechanical_power=Truyền động
-tag.btw.generates_mechanical_power=Tạo ra lực truyền động
-tag.btw.pickaxes=Cuốc chim
-tag.btw.hoes=Cuốc
+tag.btw.wool_blocks.colored=Khối len màu
+tag.btw.wool_slabs=Phiến len
+tag.btw.wool_slabs.colored=Phiến len màu
+tag.btw.carpets=Thảm
+tag.btw.carpets.colored=Thảm màu
+
+# Dyes
+tag.btw.dyes=Bột nhuộm
+tag.btw.dyes.black=Bột nhuộm đen
+tag.btw.dyes.red=Bột nhuộm đỏ
+tag.btw.dyes.green=Bột nhuộm xanh lá cây
+tag.btw.dyes.brown=Bột nhuộm nâu
+tag.btw.dyes.blue=Bột nhuộm xanh nước biển
+tag.btw.dyes.purple=Bột nhuộm tím
+tag.btw.dyes.cyan=Bột nhuộm lục lam
+tag.btw.dyes.light_gray=Bột nhuộm xám nhạt
+tag.btw.dyes.gray=Bột nhuộm xám
+tag.btw.dyes.pink=Bột nhuộm hồng
+tag.btw.dyes.lime=Bột nhuộm xanh lá mạ
+tag.btw.dyes.yellow=Bột nhuộm vàng
+tag.btw.dyes.light_blue=Bột nhuộm xanh nhạt
+tag.btw.dyes.magenta=Bột nhuộm đỏ sậm
+tag.btw.dyes.orange=Bột nhuộm cam
+tag.btw.dyes.white=Bột nhuộm trắng
+
+# Ores
+tag.btw.ores.coal=Quặng than
+tag.btw.ores.iron=Quặng sắt
+tag.btw.ores.lapis=Quặng ngọc lưu ly
+tag.btw.ores.redstone=Quặng Redstone
+tag.btw.ores.gold=Quặng vàng
+tag.btw.ores.diamond=Quặng kim cương
+tag.btw.ores.emerald=Quặng ngọc lục bảo
+tag.btw.ores.quartz=Quặng thạch anh Nether
+tag.btw.ores.clay=Quặng đất sét
+
+tag.btw.stone_ores=Quặng đá
+tag.btw.netherrack_ores=Quặng Netherrack
+tag.btw.ores=Quặng
+
+tag.btw.ores.raw=Mẩu khoáng sản thô
+tag.btw.piles.ore=Vụn khoáng sản
+
+tag.btw.coals.normal=Than thường
+tag.btw.coals=Than
+tag.btw.ingots.metal=Thỏi kim loại
+tag.btw.ingots=Thỏi
+tag.btw.nuggets=Hạt
+tag.btw.gems=Đá quý
+
+tag.btw.storage_blocks.ore=Khối khoáng sản
+tag.btw.storage_blocks.ore.raw=Khối khoáng sản thô
+tag.btw.storage_blocks.ore.coals=Khối than
+
+# Wood
+tag.btw.logs=Gỗ
+
+tag.btw.planks=Ván gỗ
+tag.btw.wooden_slabs=Phiến gỗ
+tag.btw.wooden_sidings=Ván ốp gỗ
+tag.btw.wooden_mouldings=Phào chỉ gỗ
+tag.btw.wooden_corners=Phào góc trang trí gỗ
+
+tag.btw.high_efficiency_wood_sidings=Ván ốp hiệu suất cao
+tag.btw.high_efficiency_wood_mouldings=Phào chỉ hiệu suất cao
+tag.btw.high_efficiency_sticks=Gậy hiệu suất cao
+
+tag.btw.ladders=Thang leo
+tag.btw.trapdoors=Cửa sập
+
+tag.btw.barks=Vỏ cây
+tag.btw.barks.low_tannin=Vỏ cây ít Tannin
+tag.btw.barks.medium_tannin=Vỏ cây chứa Tannin lượng vừa
+tag.btw.barks.high_tannin=Vỏ cây nhiều Tannin
+tag.btw.barks.very_high_tannin=Vỏ cây chứa rất nhiều Tannin
+
+tag.btw.sawdusts=Mạt cưa
+
+# Stone
+tag.btw.stones=Đá
+tag.btw.stone_slabs=Phiến đá
+tag.btw.stone_stairs=Cầu thang đá
+tag.btw.stone_sidings=Ốp đá
+tag.btw.stone_mouldings=Phào chỉ đá
+tag.btw.stone_corners=Phào trang trí đá
+tag.btw.stone_benches=Ghế đá
+tag.btw.stone_walls=Tường đá
+tag.btw.stone_columns=Cột đá
+tag.btw.stone_pedestals=Bệ đá
+tag.btw.stone_tables=Bàn đá
+
+tag.btw.cobblestones=Đá cuội
+tag.btw.cobblestone_slabs=Phiến đá cuội
+tag.btw.cobblestone_stairs=Cầu thang đá cuội
+tag.btw.cobblestone_walls=Tường đá cuội
+
+tag.btw.mossy_cobblestones=Đá cuội phủ rêu
+tag.btw.mossy_cobblestone_walls=Tường đá cuội phủ rêu
+
+tag.btw.loose_cobblestones=Đá cuội xếp
+tag.btw.loose_cobblestone_slabs=Phiến đá cuội xếp
+tag.btw.loose_cobblestone_stairs=Cầu thang đá cuội xếp
+
+tag.btw.stone_brick_blocks=Gạch đá
+tag.btw.stone_brick_slabs=Phiến gạch đá
+tag.btw.stone_brick_stairs=Cầu thang gạch đá
+
+tag.btw.loose_stone_bricks=Gạch đá không vữa
+tag.btw.loose_stone_brick_slabs=Phiến gạch đá không vữa
+tag.btw.loose_stone_brick_stairs=Cầu thang gạch đá không vữa
+
+tag.btw.mortar=Vữa
+tag.btw.blocks_with_mortar=Khối được bôi vữa
+tag.btw.mortarable_blocks=Khối có thể bôi vữa
+
+tag.btw.loose_rocks=Đá dăm
+
+tag.btw.bricks=Gạch
+tag.btw.bricks.clay=Gạch đất sét
+tag.btw.bricks.nether=Gạch Netherrack
+tag.btw.bricks.stone=Gạch đá
+
+tag.btw.sandstone_blocks=Khối cát linh hồn
+tag.btw.quartz_blocks=Khối thạch anh
+
+tag.btw.terracotta=Đất sét cứng
+tag.btw.terracotta.colored=Đất sét màu
+
+# Soils
+tag.btw.dirts=Đất
+tag.btw.dirt_slabs=Phiến đất
+
+tag.btw.grass_blocks=Khối cỏ
+tag.btw.grass_slabs=Phiến cỏ
+
+tag.btw.mycelium_blocks=Khuẩn ty thể
+tag.btw.mycelium_slabs=Phiến khuẩn ty thể
+
+tag.btw.sands=Cát
+tag.btw.sand_slabs=Phiến cát
+
+tag.btw.gravels=Sỏi
+tag.btw.gravel_slabs=Phiến sỏi
+
+tag.btw.piles.dirt=Nắm đất
+tag.btw.piles.sand=Nắm cát
+tag.btw.piles.gravel=Nắm sỏi
+tag.btw.piles.soul_sand=Nắm cát linh hồn
+tag.btw.piles.soil=Nắm đất cát
+
+tag.btw.blights=Khối cỏ bạc lá
+
+# Organics
+tag.btw.leaves=Lá cây
+
+tag.btw.saplings.small=Chồi cây non
+tag.btw.saplings.mature=Chồi cây
+tag.btw.saplings=Chồi cây
+
+tag.btw.seeds=Hạt giống
+tag.btw.flowers=Hoa
+tag.btw.grasses=Cỏ
+tag.btw.crops=Cây trồng
+
+# Materials
+tag.btw.strings=Sợi
+tag.btw.strings.fine=Sợi mảnh
+
+tag.btw.leathers=Da
+tag.btw.leathers.whole=Tấm da
+tag.btw.leathers.cut=Mảnh da
+tag.btw.leathers.raw=Da thô
+tag.btw.leathers.scoured=Da được làm sạch
+tag.btw.leathers.tanned=Da thuộc
+
+tag.btw.books=Sách
+
+tag.btw.soul_items=Vật phẩm chứa linh hồn
+
+tag.btw.piles=Nắm vụn
+
+tag.btw.powders=Bột
+
+tag.btw.storage_blocks=Khối vật phẩm
+
+# Food
+tag.btw.meats=Thịt
+tag.btw.meats.raw=Thịt sống
+tag.btw.meats.cooked=Thịt chín
+tag.btw.meats.hearty=Mâm thịt
+
+tag.btw.eggs=Trứng
+tag.btw.eggs.raw=Trứng sống
+tag.btw.eggs.cooked=Trứng chín
+tag.btw.eggs.whole=Nguyên trái trứng
+
+tag.btw.carrots=Cà rốt
+tag.btw.potatoes=Khoai tây
+tag.btw.potatoes.cooked=Khoai tây chín
+
+tag.btw.vegetables=Rau củ
+tag.btw.vegetables.raw=Rau củ sống
+tag.btw.vegetables.cooked=Rau củ chín
+
+tag.btw.mushrooms=Nấm
+
+tag.btw.fruits=Trái cây
+
+tag.btw.breads=Bánh mì
+
+tag.btw.desserts=Đồ ngọt
+
+tag.btw.meals=Món ăn
+tag.btw.meals.raw=Món ăn sống
+tag.btw.meals.small=Thức ăn nhanh
+tag.btw.meals.normal=Món ăn no đủ
+tag.btw.meals.hearty=Món ăn thịnh soạn
+
+tag.btw.questionable_foods=Bạn đói đến vậy à?
+
 tag.btw.foods=Đồ ăn
-tag.btw.bark_boxes=Hộp vỏ cây
+
+# Animal Feed
+tag.btw.wolf_foods=Đồ ăn cho chó
+tag.btw.wolf_foods.low_quality=Đồ ăn cho chó chất lượng kém
+tag.btw.wolf_foods.high_quality=Đồ ăn cho chó chất lượng cao
+tag.btw.wolf_breeding_foods=Đồ ăn nhân giống chó
+tag.btw.wolf_angering_foods=Đồ ăn chọc tức chó
+tag.btw.wolf_transforming_foods=Đồ ăn biến chó thành quái thú
+
+tag.btw.chicken_foods=Đồ ăn cho gà
+tag.btw.chicken_breeding_foods=Đồ ăn nhân giống gà
+
+tag.btw.pig_foods=Đồ ăn cho heo
+tag.btw.pig_foods.low_quality=Đồ ăn cho heo chất lượng kém
+tag.btw.pig_foods.high_quality=Đồ ăn cho heo chất lượng cao
+tag.btw.pig_breeding_foods=Đồ ăn nhân giống heo
+
+tag.btw.herbivore_foods=Đồ ăn cho thú ăn cỏ
+tag.btw.herbivore_foods.low_quality=Đồ ăn cho thú ăn cỏ chất lượng kém
+tag.btw.herbivore_foods.high_quality=Đồ ăn cho thú ăn cỏ chất lượng cao
+
+tag.btw.sheep_breeding_foods=Đồ ăn nhân giống cừu
+tag.btw.cow_breeding_foods=Đồ ăn nhân giống bò
+tag.btw.horse_breeding_foods=Đồ ăn nhân giống ngựa
+
+# Tools
+tag.btw.tools=Công cụ
+
+tag.btw.tools.axes=Rìu
+tag.btw.tools.axes.low_quality=Rìu chất lượng kém
+tag.btw.tools.axes.high_quality=Rìu chất lượng cao
+
+tag.btw.tools.chisels=Cái đục
+
+tag.btw.tools.firestarters=Công cụ đánh lửa
+tag.btw.tools.firestarters.low_quality=Công cụ đánh lửa chất lượng kém
+tag.btw.tools.firestarters.high_quality=Công cụ đánh lửa chất lượng cao
+
+tag.btw.tools.fishing_rods=Cần câu
+
+tag.btw.tools.hoes=Cuốc đất
+tag.btw.tools.hoes.low_quality=Cuốc đất chất lượng kém
+tag.btw.tools.hoes.high_quality=Cuốc đất chất lượng cao
+
+tag.btw.tools.pickaxes=Cuốc chim
+tag.btw.tools.pickaxes.low_quality=Cuốc chim chất lượng kém
+tag.btw.tools.pickaxes.high_quality=Cuốc chim chất lượng cao
+
+tag.btw.tools.shears=Kéo
+
+tag.btw.tools.shovels=Xẻng
+tag.btw.tools.shovels.low_quality=Xẻng chất lượng kém
+tag.btw.tools.shovels.high_quality=Xẻng chất lượng cao
+
+tag.btw.tools.weapons=Vũ khí
+tag.btw.tools.weapons.bows=Cung
+tag.btw.tools.weapons.melee=Vũ khí cận chiến
+tag.btw.tools.weapons.melee.clubs=Côn
+tag.btw.tools.weapons.melee.swords=Kiếm
+
+tag.btw.arrows=Mũi tên
+tag.btw.arrows.low_quality=Mũi tên chất lượng kém
+tag.btw.arrows.high_quality=Mũi tên chất lượng cao
+
+tag.btw.tool_handles=Cán
+tag.btw.tool_handles.low_quality=Cán chất lượng kém
+tag.btw.tool_handles.high_quality=Cán chất lượng cao
+
+tag.btw.fishing_hooks=Móc câu
 tag.btw.fishing_bait=Mồi câu
 
+# Armor
+tag.btw.armor=Giáp
+
+tag.btw.armor.light=Giáp hạng nhẹ
+tag.btw.armor.heavy=Giáp hạng nặng
+tag.btw.armor.hybrid=Giáp tổ hợp
+tag.btw.armor.ultra_heavy=Giáp cực nặng
+
+tag.btw.armor.wool=Giáp len
+tag.btw.armor.padded=Giáp đệm
+tag.btw.armor.leather=Giáp da
+tag.btw.armor.tanned_leather=Giáp da thuộc
+tag.btw.armor.gimp=Bộ đồ Gimp
+tag.btw.armor.chain=Giáp xích
+tag.btw.armor.iron=Giáp sắt
+tag.btw.armor.gold=Giáp vàng
+tag.btw.armor.diamond=Giáp kim cương
+tag.btw.armor.steel=Giáp ngục hồn
+
+tag.btw.armor.boots=Ủng
+tag.btw.armor.leggings=Quần
+tag.btw.armor.chestplates=Áo
+tag.btw.armor.helmets=Nón
+
+tag.btw.armor_plates=Tấm giáp
+
+# Misc Equipment
+tag.btw.arcane_scrolls=Cuộn giấy huyền bí
+tag.btw.potions=Thuốc
+
+# Decorative
+tag.btw.candles=Nến
+tag.btw.metal_bars=Thỏi kim loại
+
+tag.btw.vases=Bình
+tag.btw.vases.colored=Bình màu
+
+# Functional Blocks
+tag.btw.bark_boxes=Hộp vỏ cây
+
+tag.btw.torches=Đuốc
+tag.btw.torches.finite=Đuốc hữu hạn
+tag.btw.torches.infinite=Đuốc vô hạn
+tag.btw.torches.unlit=Đuốc chưa thắp
+tag.btw.torches.lit=Đuốc đang cháy
+tag.btw.torches.coal=Đuốc than
+
+tag.btw.chopping_blocks=Thớt
+
+tag.btw.unfired_pottery=Gốm chưa nung
+tag.btw.planters=Chậu cây
+
+tag.btw.buttons=Nút bấm
+tag.btw.buttons.wooden=Nút bấm gỗ
+tag.btw.buttons.stone=Nút bấm đá
+
+tag.btw.pressure_plates=Tấm cảm biến
+tag.btw.pressure_plates.wooden=Tấm cảm biến gỗ
+tag.btw.pressure_plates.stone=Tấm cảm biến đá
+tag.btw.pressure_plates.metal=Tấm cảm biến kim loại
+
+tag.btw.rails=Đường ray
+tag.btw.rails.detector=Đường ray cảm biến
+tag.btw.rails.detector.wooden=Đường ray cảm biến gỗ
+tag.btw.rails.detector.stone=Đường ray cảm biến đá
+tag.btw.rails.detector.metal=Đường ray cảm biến kim loại
+
+# Mechanical Power
+tag.btw.requires_mechanical_power=Nhận đầu vào động năng cơ học
+tag.btw.transmits_mechanical_power=Truyền động năng cơ học
+tag.btw.generates_mechanical_power=Tạo động năng cơ học
+
+# Hopper Filtering
+tag.btw.hopper_filters=Tấm lọc
+tag.btw.hopper_filters.soul=Lọc linh hồn
+tag.btw.hopper_filters.powdery=Lọc các loại bột
+tag.btw.hopper_filters.thin=Thin Filters
+tag.btw.hopper_filters.small=Small Filters
+tag.btw.hopper_filters.narrow=Narrow Filters
+tag.btw.hopper_filters.stackable=Stackable Filters
+tag.btw.hopper_filters.items=Item Filters
+
+tag.btw.filtered_as_powder=Lọc vật phẩm dạng bột
+tag.btw.filtered_as_thin=Lọc vật phẩm mỏng
+tag.btw.filtered_as_small=Lọc vật phẩm nhỏ
+tag.btw.filtered_as_narrow=Lọc vật phẩm nhỏ hẹp
+tag.btw.filtered_as_stackable=Lọc vật phẩm stack được
+tag.btw.filtered_as_items=Lọc vật phẩm không phải khối
+
+# Bellows Sorting
+tag.btw.long_blow_distance=Bễ thổi đi xa
+tag.btw.medium_blow_distance=Bễ thổi đi không xa lắm
+tag.btw.short_blow_distance=Bễ thổi đi một đoạn ngắn
+
+# Buoyancy
+tag.btw.buoyant=Buoyant
+tag.btw.neutral_buoyancy=Neutral Buoyancy
+
+# Wildcards
 tag.wildcard.Cuộn giấy huyền bí.22479=Cuộn giấy huyền bí
 tag.wildcard.Ốp thạch anh.178=Ngoại thất thạch anh
 tag.wildcard.candle.black.22602=Nến
@@ -515,20 +855,20 @@ tag.wildcard.Phào chỉ đá đen.1146=Phào chỉ đá đen
 
 # EMI recipe info
 
-emi.info.piston_crushing_input=Items in world surrounded by solid faces
-emi.info.piston_crushing_output=Placed block as output
+emi.info.piston_crushing_input=Vật phẩm trên đất bao quanh bởi các mặt kín
+emi.info.piston_crushing_output=Khối đầu ra
 
 emi.info.hopper_urn=Đặt bên dưới Phễu
 emi.info.input=Đầu vào
 emi.info.filter_item=Tấm lọc
 emi.info.output=Đầu ra
 emi.info.filter_output=Đầu ra khi lọc
-emi.info.kiln.cycle=Cycle configurations
-emi.info.stoked=Requires a stoked hibachi
-emi.info.mechanical=Requires mechanical power
-emi.info.fist=Fist
-emi.info.no_campfire=Cannot be burned in a campfire!
-emi.info.no_oven=Cannot be burned in a oven!
+emi.info.kiln.cycle=Thay đổi bố trí
+emi.info.stoked=Cần lửa Hibachi bốc lên cao
+emi.info.mechanical=Cần động năng cơ học
+emi.info.fist=Đấm tay
+emi.info.no_campfire=Không thể nướng trên lửa trại!
+emi.info.no_oven=Không thể nung trong lò!
 
 # EMI Item Info
 
@@ -566,14 +906,14 @@ btw.fire_charge.info=Cầu lửa có thể bắt lửa bất kì khối nào có
 btw.mortar.info=Đất sét, bóng nhờn hoặc bùn Nether có thể được dùng để trát lên đá cuội nứt hoặc gạch không vữa để chúng không còn bị rơi nữa. Máy phân phát cũng có thể tự động trát lên khối.
 btw.mortar_blocks.info=Các khối có kết cấu lỏng lẻo như đá cuội nứt hoặc gạch không vữa có thể kết dính lại bằng cách trét Đất sét, Bóng nhờn hoặc Bùn Nethern (cầm trên tay vật phẩm và nhấp chuột phải vào khối). Máy phân phát cũng có thể tự động trát lên khối.
 
-btw.axle.info=Trục có thể được dùng để truyền các công suất cơ học. Trục có thể dài tối đa ba khối, sau đó cần thêm hộp truyền động để tiếp tục.
-btw.gearbox.info=Hộp truyền động được dùng để truyền năng lượng cơ học. Mặt có mũi tên là đầu vào, và bất kì mặt nào khác cũng có thể là đầu ra. Lưu ý: Hộp truyền động không thể truyền năng lượng cho nhau mà cần thêm ít nhất một trục giữa hai hộp truyền động.
+btw.axle.info=Trục có thể được dùng để truyền các động năng cơ học. Trục có thể dài tối đa ba khối, sau đó cần thêm hộp truyền động để tiếp tục.
+btw.gearbox.info=Hộp truyền động được dùng để truyền động năng cơ học. Mặt có mũi tên là đầu vào, và bất kì mặt nào khác cũng có thể là đầu ra. Lưu ý: Hộp truyền động không thể truyền năng lượng cho nhau mà cần thêm ít nhất một trục giữa hai hộp truyền động.
 btw.redstone_clutch.info=Bộ ly hợp Redstone cũng là hộp truyền động nhưng có thể tắt bằng tín hiệu redstone.
-btw.vertical_windmill.info=Quạt lồng sóc tạo ra năng lượng cơ học và có thể kết nối bằng trục theo phương thẳng đứng. Quạt lồng sóc cũng giống như cánh quạt gió trừ việc nó là nguồn năng lượng cơ học duy nhất ở Nether.
-btw.water_wheel.info=Bánh xe nước tạo ra năng lượng cơ học và có thể kết nối bằng trục theo phương ngang. Đồng thời, nó cũng là nguồn năng lượng duy nhất ở the End, nơi mà bạn đặt nước ở đâu cũng được.
-btw.windmill.info=Cánh quạt gió tạo ra năng lượng cơ học khi được đặt lộ thiên và có thể kết nối bằng trục theo phương ngang. Cánh quạt gió rất lớn nên hãy nhớ đặt nó ra ở không gian rộng rãi. Chúng cũng bị ảnh hưởng bởi mưa bão, làm hỏng các thiết bị cơ học mà chúng kết nối lúc mưa bão, bạn có thể ngắt kết nối bằng cách sử dụng bộ ly hợp Redstone.
+btw.vertical_windmill.info=Quạt lồng sóc tạo ra động năng cơ học và có thể kết nối bằng trục theo phương thẳng đứng. Quạt lồng sóc cũng giống như cánh quạt gió trừ việc nó là nguồn động năng cơ học duy nhất ở Nether.
+btw.water_wheel.info=Bánh xe nước tạo ra động năng cơ học và có thể kết nối bằng trục theo phương ngang. Đồng thời, nó cũng là nguồn năng lượng duy nhất ở the End, nơi mà bạn đặt nước ở đâu cũng được.
+btw.windmill.info=Cánh quạt gió tạo ra động năng cơ học khi được đặt lộ thiên và có thể kết nối bằng trục theo phương ngang. Cánh quạt gió rất lớn nên hãy nhớ đặt nó ra ở không gian rộng rãi. Chúng cũng bị ảnh hưởng bởi mưa bão, làm hỏng các thiết bị cơ học mà chúng kết nối lúc mưa bão, bạn có thể ngắt kết nối bằng cách sử dụng bộ ly hợp Redstone.
 
-btw.bellows.info=Bễ có thể thổi hơi cho 9 hibachi (3x3) đặt ở trước nó. Nhưng bạn cần để cho bật và tắt nguồn năng lượng cơ học liên tục để bễ co giãn, thổi không khí vào, bàn xoay thường được sử dụng để canh thời gian. Bễ còn thường được sử dụng để sắp xếp vật phẩm bằng cách thổi chúng đi cách khoảng cách khác nhau tùy theo trọng lượng.
+btw.bellows.info=Bễ có thể thổi hơi cho 9 hibachi (3x3) đặt ở trước nó. Nhưng bạn cần để cho bật và tắt nguồn động năng cơ học liên tục để bễ co giãn, thổi không khí vào, bàn xoay thường được sử dụng để canh thời gian. Bễ còn thường được sử dụng để sắp xếp vật phẩm bằng cách thổi chúng đi cách khoảng cách khác nhau tùy theo trọng lượng.
 btw.cauldron.info=Vạc có thể nung các vật phẩm mà không cần tới nhiên liệu, ví dụ như đồ ăn,v.v , chỉ cần có lửa ở dưới. Bạn có thể sử dụng lửa trại hoặc chỉ cần lửa thông thường để nung. Càng nhiều lửa thì tốc độ nung càng nhanh, tối đa là 3x3 dưới vạc. Sử dụng hibachi cũng có thể mở ra nhiều công thức mới nhưng cũng cần nhiều nhiệt hơn. Bạn cũng có thể sử dụng trục xoay để đổ vật phẩm bên trong ra ngoài.
 btw.crucible.info=Nồi lò cũng giống như cái vạc nhưng lại cần lửa cháy mạnh để nấu. Và cũng giống như Vạc và Lò nung, càng nhiều lửa thì tốc độ nung càng nhanh, tối đa là 3x3 dưới vạc. Bạn cũng có thể sử dụng trục xoay để đổ vật phẩm bên trong ra ngoài.
 btw.dormant_soulforge.info=Mỗi pháo đài Nether chứa một cái bàn rèn vàng, bạn cũng có thể chế tạo nhiều bàn rèn vàng hơn bằng bàn rèn ngục hồn nhưng chắc chắn bạn sẽ cần cái bàn rèn đầu tiên của mình trong pháo đài Nether.
@@ -582,7 +922,7 @@ btw.dynamite.info=Một loại thuốc nổ có thể ném đi bằng cách cầ
 btw.hand_crank.info=Tay quay có thể sử dụng cho một số máy đơn giản nhưng lại tốn nhiều thanh đói mỗi lần quay. Tay quay có thể sử dụng cho Bễ, Cối đá và Phễu. Tay quay cũng có thể xoay Vạc, Nồi lò và Long bình và đổ vật phẩm ở bên trong ra.
 btw.hibachi.info=Hibachi cháy khi được kích hoạt bởi redstone, và lửa này đủ ổn định để được thổi mạnh. Một Bễ có thể thổi lửa cho tối đa 9 lò đốt Hibachi (3x3).
 btw.kiln.info=Các khối gạch có thể xếp lại thành một cái lò nung để nung gốm. Đặt một khối gạch phía trên một Hibachi đang cháy, sau đó thêm 3 khối gạch khác xung quanh khối không khí bên trên khối gạch vừa rồi. Sắp xếp như thế nào không quan trọng. Tối đa 9 Hibachi (3x3) có thể cung cấp nhiệt lượng cho lò nung, càng nhiều Hibachi thì tốc độ càng nhanh.
-btw.millstone.info=Cối đá có thể được sử dụng để nghiền các nguyên liệu. Cối đá có thể được cung cấp năng lượng cơ học bằng Tay quay, hoặc từ phía trên hoặc dưới. Vì Cối Xay chỉ chứa được một vật phẩm, bạn cần có Phễu ở trên nếu muốn tự động đưa thêm vật phẩm vào. Khi nghiền xong, thành phẩm sẽ rơi ngẫu nhiên xung quanh nên đừng để bất kì vật cản nào quanh cối.
+btw.millstone.info=Cối đá có thể được sử dụng để nghiền các nguyên liệu. Cối đá có thể được cung cấp động năng cơ học bằng Tay quay, hoặc từ phía trên hoặc dưới. Vì Cối Xay chỉ chứa được một vật phẩm, bạn cần có Phễu ở trên nếu muốn tự động đưa thêm vật phẩm vào. Khi nghiền xong, thành phẩm sẽ rơi ngẫu nhiên xung quanh nên đừng để bất kì vật cản nào quanh cối.
 btw.piston_shovel.info=Đẩy pít tông vào xẻng để lấy các khối mềm hoặc tơi xốp. Nó có thể nhặt khối như sử dụng Độ mềm mại, do đó có thể dùng để lấy khối cỏ hoặc gì đấy.
 btw.planter.info=Cái chậu có thể dùng để trồng cây mà không bị cỏ dại. Chậu cây cũng cần có nước như đất trồng vậy nhưng cần có nước quanh chậu hoặc phía trên hoặc bên dưới.
 btw.saw.info=Cưa cắt gỗ khi có trục xoay bên cạnh. Nó cũng có thể cưa chết sinh vậy chạm vào nó nên cực kì hữu ích trong các mob farm. Đẩy một Thớt vào Cưa sẽ tăng sát thương đồng thời cũng tăng tỉ lệ rơi ra đầu.
