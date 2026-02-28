@@ -49,6 +49,7 @@ tile.fcBlockUnfiredPottery.urn.name=Lọ đất
 tile.fcBlockUnfiredPottery.mould.name=Khuôn đất
 tile.fcBlockCrucible.name=Nồi lò
 tile.fcBlockPlanter.name=Cái chậu
+tile.fcBlockPlanter.soulSand.name=Chậu cát linh hồn
 tile.fcBlockVase.name=Cái bình
 tile.fcBlockDetectorRailWood.name=Đường ray cảm biến
 tile.fcBlockDetectorRailSoulforgedSteel.name=Đường ray cảm biến
@@ -92,7 +93,8 @@ tile.fcBlockLogSpike.name=Đế lót nến
 tile.fcBlockTorchIdle.name=Đuốc bị tắt
 tile.fcBlockUnfiredClay.name=Khối đất sét
 tile.fcBlockNetherSludge.name=Khối bùn Nether
-tile.fcBlockMyceliumSlab.name=Phiến khuẩn ti thể		
+tile.fcBlockMyceliumSlab.name=Phiến khuẩn ty thể
+tile.fcBlockBrickLooseStairs.name=Cầu thang gạch xếp
 tile.fcBlockBoxBark.name=Hộp vỏ cây
 
 tile.fcBlockBrickLooseStairs.name=Cầu thang gạch không vữa
@@ -452,17 +454,17 @@ tile.stoneMoss.blackstone.name=Đá cuội đen phủ rêu
 
 tile.stonebricksmooth.stone.name=Gạch đá
 tile.stonebricksmooth.stone.mossy.name=Gạch đá phủ rêu
-tile.stonebricksmooth.stone.cracked.name=Gạch đá không vữa
+tile.stonebricksmooth.stone.cracked.name=Gạch đá nứt
 tile.stonebricksmooth.stone.chiseled.name=Gạch đá được đục
 
 tile.stonebricksmooth.deepslate.name=Gạch đá bảng sâu
 tile.stonebricksmooth.deepslate.mossy.name=Gạch đá bảng sâu phủ rêu
-tile.stonebricksmooth.deepslate.cracked.name=Gạch đá bảng sâu không vữa
+tile.stonebricksmooth.deepslate.cracked.name=Gạch đá bảng sâu nứt
 tile.stonebricksmooth.deepslate.chiseled.name=Gạch đá bảng sâu được đục
 
 tile.stonebricksmooth.blackstone.name=Gạch đá đen
 tile.stonebricksmooth.blackstone.mossy.name=Gạch đá đen phủ rêu
-tile.stonebricksmooth.blackstone.cracked.name=Gạch đá đen không vữa
+tile.stonebricksmooth.blackstone.cracked.name=Gạch đá đen nứt
 tile.stonebricksmooth.blackstone.chiseled.name=Gạch đá đen được đục
 
 tile.cobblestoneSlab.stone.name=Phiến đá cuội
@@ -490,8 +492,8 @@ tile.sapling.jungleMature.name=Chồi cây rừng cũ
 tile.netherrack.name=Netherrack
 tile.portal.name=Cổng Nether
 
-tile.ice.natural.name=Natural Ice
-tile.ice.artificial.name=Ice
+tile.ice.natural.name=Băng tự nhiên
+tile.ice.artificial.name=Băng
 
 # BTW Items
 
@@ -551,9 +553,9 @@ item.fcItemPotash.name=Muối Kali
 item.fcItemSoap.name=Xà phòng
 item.fcItemDustSaw.name=Mạt cưa
 item.fcItemGimpHelm.name=Mặt nạ Gimp
-item.fcItemGimpChest.name=Áo Gimp
-item.fcItemGimpLeggings.name=Quần Gimp
-item.fcItemGimpBoots.name=Ủng Gimp
+item.fcItemGimpChest.name=Vest da
+item.fcItemGimpLeggings.name=Quần Chaps
+item.fcItemGimpBoots.name=Ủng Biker
 item.fcItemDynamite.name=Mìn Dynamite
 item.fcItemHarnessBreeding.name=Dụng cụ nhân giống
 item.fcItemDustSoul.name=Bụi linh hồn
@@ -632,6 +634,7 @@ item.fcItemBatWing.name=Cánh dơi
 item.fcItemDungGolden.name=Cứt dát vàng
 item.fcItemPileSoulSand.name=Nắm cát linh hồn
 item.fcItemPileEmerald.name=Vụn ngọc lục bảo
+item.fcItemPileDiamond.name=Vụn kim cương
 item.fcItemRedstoneLatch.name=Chốt Redstone
 item.fcItemNuggetSteel.name=Hạt thép ngục hồn
 item.fcItemWool.name=Cuộn len
@@ -843,10 +846,11 @@ entity.addonVillagerPriest.name=Mục sư
 
 # KeyBindings
 
-key.special=Alternative Use
+key.special=Phím khác
 
 # Chat Messages
 
+message.warning=[WARNING]: %1$s
 item.fcItemWaterWheel.placementObstructed=Có cái gì đó đang làm nghẽn bánh xe nước, hoặc là do bạn.
 item.fcItemWaterWheel.notEnoughRoom=Không đủ không gian để đặt bánh xe nước.
 message.windMill.placementObstructed=Không thể đặt cánh quạt vì có gì đó đang ở quanh khu vực này. Hoặc có thể đó là bạn.
@@ -857,6 +861,7 @@ tile.beacon.invalid=Vị trí hồi sinh của bạn không hợp lệ.
 tile.beacon.notPresent=Chiếc đèn hiệu bạn ràng buộc bản thân vào đã không còn nữa
 tile.beacon.tooFar=Chiếc đèn hiệu bạn ràng buộc bản thân vào ở quá xa
 tile.beacon.obstructed=Có gì đó che khuất chiếc đèn hiệu bạn ràng buộc bản thân vào
+tile.beacon.unbound=Sự kết nối giữa bạn và đèn hiệu đã bị cắt đứt
 tile.beacon.unknown=Hồi sinh thất bại vì lý do bí ẩn nào đó
 tile.bed.sleepImpossible=Bạn sẽ gặp rắc rối nếu nghỉ ngơi ở đây
 tile.fcBlockHandCrank.playerExhausted=Bạn quá mệt mỏi để lao động chân tay
@@ -875,7 +880,7 @@ death.attack.fcChoppingBlock=%1$s đã lên thớt
 death.attack.fcGroth=%1$s đã trở thành một với Groth
 death.attack.fcGrothSpores=%1$s đã không chịu nổi Groth
 death.attack.fcMelon=%1$s đã bị dưa hấu đè bẹp
-death.attack.fcPumpkin=%1$s trung thành với bí ngô… cho tới chết
+death.attack.fcPumpkin=%1$s chung thủy với bí ngô… cho tới chết
 death.attack.fcGloom=%1$s đã bị bóng tối nuốt chửng
 
 # Status effects
@@ -918,6 +923,9 @@ command.serverLoc.usage=/loc
 command.time.currentWorldTime=Thời gian hiện tại ở Overworld
 command.time.totalWorldTime=Tổng thời gian ở Overworld
 
+commands.setworldspawn.usage=/setworldspawn HOẶC /setworldspawn <x> <y> <z>
+commands.setworldspawn.success=Chuyển điểm spawn thành (%d, %d, %d)
+
 # Menu strings
 
 selectWorld.difficulty=Độ khó
@@ -940,10 +948,12 @@ deathScreen.respawnNearby=Hồi sinh gần đây
 options.lock_difficulty=Khóa độ khó
 options.lock_difficulty.warning=Bạn có chắc chắn muốn khóa độ khó hay không? Bạn sẽ không bao giờ thay đổi độ khó được nữa.
 
+options.borderlessFullscreen=Toàn màn hình
+
 difficulty.btw.standard.name=Bình thường
 difficulty.btw.standard.description=Độ khó sinh tồn tiêu chuẩn dành cho
 difficulty.btw.standard.description2=những người chơi kinh nghiệm hoặc những
-difficulty.btw.standard.description3=người muốn thách thức bản thân.
+difficulty.btw.standard.description3=người muốn sinh tồn áp lực hơn.
 
 difficulty.btw.relaxed.name=Nhẹ nhàng
 difficulty.btw.relaxed.description=Chế độ chơi nhẹ nhàng hơn dành cho
@@ -952,8 +962,8 @@ difficulty.btw.relaxed.description3=giảm đi áp lực khi sinh tồn.
 
 difficulty.btw.hostile.name=Khắc nghiệt
 difficulty.btw.hostile.description=Chế độ chơi khắc nghiệt hơn.
-difficulty.btw.hostile.description2=Dành cho những người người muốn trải
-difficulty.btw.hostile.description3=nghiệm sinh tồn của mình áp lực hơn.
+difficulty.btw.hostile.description2=Dành cho những người người muốn
+difficulty.btw.hostile.description3=thách thức bản thân.
 
 difficulty.hostile_restricted.name=Khắc nghiệt
 
@@ -1101,7 +1111,7 @@ achievement.btw.mine_redstone_ore.desc=Đào một ít đá đỏ.
 achievement.btw.power_the_cake=Bạn biết bạn muốn mà
 achievement.btw.power_the_cake.desc=Kích hoạt Bánh ngọt bằng đá đỏ
 
-achievement.btw.craft_compass=Về nhà
+achievement.btw.craft_compass=Đi thật xa để trở về
 achievement.btw.craft_compass.desc=Có được La bàn để tìm về Spawn Point.
 
 #Iron Age Tab
@@ -1181,7 +1191,7 @@ achievement.btw.find_diamonds.desc=Kiếm ít kim cương.
 achievement.btw.craft_diamond_ingot=Sáng bóng!
 achievement.btw.craft_diamond_ingot.desc=Có được một Thỏi Kim cương.
 
-achievement.btw.listen_to_music=Time to Raise Hell
+achievement.btw.listen_to_music=Quẩy lên
 achievement.btw.listen_to_music.desc=Nghe một đĩa nhạc.
 
 achievement.btw.craft_diamond_pick=Xẻng vỡ, cuốc mòn
@@ -1227,9 +1237,9 @@ achievement.btw.stoke_fire=Thổi bùng ngọn lửa
 achievement.btw.stoke_fire.desc=Dùng Bễ và Hibachi để thổi lửa.
 
 achievement.btw.spin_pottery=Làm gốm Bát Tràng
-achievement.btw.spin_pottery.desc=Turn clay on a Turntable into a piece of pottery
+achievement.btw.spin_pottery.desc=Làm gốm bằng Bàn xoay.
 
-achievement.btw.craft_crucible=Đến lúc tái chế!
+achievement.btw.craft_crucible=Nhặt rác để sống khác!
 achievement.btw.craft_crucible.desc=Nung Nồi lò đất trong Lò nung.
 
 achievement.btw.craft_urn=Bắt sóc bỏ lọ
@@ -1241,7 +1251,7 @@ achievement.btw.craft_soul_urn.desc=Đặt một cái Lọ bên dưới Phễu �
 achievement.btw.craft_water_wheel=Thủy năng
 achievement.btw.craft_water_wheel.desc=Có được Bánh xe nước.
 
-achievement.btw.craft_dynamite=With a Laser Beam!
+achievement.btw.craft_dynamite=Kẹo này có vị cay cay
 achievement.btw.craft_dynamite.desc=Có được Mìn Dynamite.
 
 achievement.btw.redneck_fishing=Làm thế là phạm pháp đấy!
@@ -1365,7 +1375,7 @@ achievement.btw.max_infernal_enchant.desc=Phù phép vật phẩm tối đa bằ
 achievement.btw.max_steel_beacon=Endgame
 achievement.btw.max_steel_beacon.desc=Xây Đèn hiệu Ngục hồn cấp 4.
 
-achievement.btw.steel_beacon_respawn_across_dimensions=Du hành vũ trụ Minecraft
+achievement.btw.steel_beacon_respawn_across_dimensions=Du hành vũ trụ Nhệ-, à Minecraft
 achievement.btw.steel_beacon_respawn_across_dimensions.desc=Hồi sinh tại Đèn hiệu Ngục hồn khi bạn chết ở chiều không gian khác.
 
 achievement.btw.get_bootsies=Cái tất kia cứng quá rồi
@@ -1392,7 +1402,7 @@ achievement.btw.eatMysteryMeat.desc="Mẹ ăn thịt con, có còn xin miếng!"
 achievement.btw.possess_entity=Vong hồn vất vưởng
 achievement.btw.possess_entity.desc=Cho một linh hồn ám một con vật (Hoặc dân làng. Đừng lo. Gu bạn mặn, chúng tôi không đánh giá).
 
-achievement.btw.possess_entity_with_death=Host Hopping
+achievement.btw.possess_entity_with_death=Thay vật chủ như thay áo
 achievement.btw.possess_entity_with_death.desc=Giết một sinh vật đang bị ám khiến linh hồn đang ám đấy ám một sinh vật khác.
 
 achievement.btw.possess_chicken=Cứ chờ tí...
