@@ -122,6 +122,8 @@ tile.fcBlockSilverfishStoneChiseled.name=虫蚀錾制石砖
 tile.fcBlockClay.name=粘土矿
 tile.fcBlockGrassSlab.name=草台阶
 tile.fcBlockBedroll.name=地铺
+tile.fcBlockBedrollOld.name=旧地铺
+tile.fcBlockBed.name=床
 tile.fcBlockSpiderEye.name=蜘蛛眼块
 tile.fcBlockSpiderEyeSlab.name=蜘蛛眼台阶
 tile.fcBlockSaplingOak.name=橡树幼苗
@@ -321,6 +323,7 @@ tile.quartzBlock.lines.name=石英柱
 tile.pumpkin.name=雕刻南瓜
 tile.wood.blood.name=血木木板
 tile.woodSlab.blood.name=血木台阶
+tile.bed.name=旧床
 
 tile.torch.name=旧火把
 
@@ -335,6 +338,9 @@ tile.sapling.oakMature.name=旧成熟橡树苗
 tile.sapling.spruceMature.name=旧成熟云杉树苗
 tile.sapling.birchMature.name=旧成熟白桦树苗
 tile.sapling.jungleMature.name=旧成熟丛林树苗
+
+tile.ice.natural.name=自然冰
+tile.ice.artificial.name=冰
 
 # BTW Items
 
