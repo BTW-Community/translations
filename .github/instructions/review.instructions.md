@@ -2,19 +2,25 @@
 applyTo: "**/*.lang"
 ---
 
-Review the translation files and identify any entries that may be problematic.
+Review translation changes carefully.
 
-When the corresponding English source is available, compare each translation with the English text and verify that it accurately preserves the original meaning and tone.
+Verify that translations accurately preserve the intended meaning.
+
+If the original English source is unavailable:
+- Compare the changed translation against other available language files to infer the likely intended meaning.
+- Use multiple languages as supporting evidence rather than treating any single translation as authoritative.
+- Pay special attention to translations that are significantly different from the apparent meaning shared across other languages.
+- Consider that some differences may be caused by natural language differences, grammar, or localization choices.
 
 Focus on:
 - Deliberately incorrect or joke translations.
-- Rude, offensive, or vulgar language that is not present in the source text.
+- Rude, offensive, or vulgar language that is not supported by the apparent source meaning.
 - Changes in meaning that alter the intent of the original text.
-- Spelling, grammar, punctuation, and naturalness in the target language.
-- Consistency with other translations in the file and with the English source.
+- Spelling, grammar, punctuation, and naturalness.
+- Consistency with related translations.
 
 When suggesting changes:
 - Explain why a translation appears problematic.
-- Distinguish between objective issues (such as spelling, grammar, or incorrect meaning) and subjective stylistic preferences.
-- Do not flag humorous, risqué or colloquial translations if they accurately reflect the tone of the original text.
-- If there is insufficient context to determine whether a translation is correct, state that explicitly rather than guessing.
+- Distinguish objective errors from subjective stylistic differences.
+- Do not flag creative, risqué, humorous, or localized wording if it preserves the intended meaning.
+- If the intended meaning cannot be determined with confidence, state that explicitly rather than guessing.
