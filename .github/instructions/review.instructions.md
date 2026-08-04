@@ -2,12 +2,6 @@
 applyTo: "**/*.lang"
 ---
 
-Give guidance on whether the translation is legitimate and not a joke. Point out potential rude or crude translations. Review all the translations for spelling, grammar and meaning.
-
----
-applyTo: "**/*.lang"
----
-
 Review the translation files and identify any entries that may be problematic.
 
 When the corresponding English source is available, compare each translation with the English text and verify that it accurately preserves the original meaning and tone.
