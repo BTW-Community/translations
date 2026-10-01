@@ -73,11 +73,46 @@ tile.fcBlockLogDamagedJungle.name=Entrindeter Tropenstamm
 tile.fcBlockGrassSparseLoose.name=Spärlicher Lockerer Grasblock
 tile.fcBlockDirtLoose.name=Lockere Erde
 tile.fcBlockDirtLooseSlab.name=Lockere Erdstufe
+tile.fcBlockGrassSlabSparseLoose.name=Spärliche Lockere Grasstufe
+tile.fcBlockFarmlandFertilizedNew.name=Ackerboden
 tile.fcBlockCampfire.name=Lagerfeuer
 tile.fcBlockUnfiredBrick.name=Ungebrannter Ziegel
 tile.fcBlockCookedBrick.name=Ziegel
 tile.fcBlockBrickLoose.name=Lockere Ziegelsteine
 tile.fcBlockBrickLooseSlab.name=Lockere Ziegelsteinstufe
+
+tile.bucket.name=Eimer
+tile.bucketWater.name=Wassereimer
+tile.fcItemBucketCement.name=Zementeimer
+tile.fcBlockBucketMilk.name=Milcheimer
+tile.fcBlockBucketMilkChocolate.name=Schokoladenmilcheimer
+tile.fcBlockMilk.name=Milch
+tile.fcBlockMilkChocolate.name=Schokoladenmilch
+
+tile.fcBlockWheatCrop.name=Weizen
+tile.fcBlockWheatCropTop.name=Weizen
+tile.fcBlockReedRoots.name=Zuckerrohrwurzeln
+tile.fcBlockCarrots.name=Karotten
+tile.fcBlockCarrotFlowers.name=Karotten
+tile.fcBlockShaft.name=Stiel
+
+tile.fcBlockCandle_plain.name=Kerze
+tile.fcBlockCandle_black.name=Schwarze Kerze
+tile.fcBlockCandle_red.name=Rote Kerze
+tile.fcBlockCandle_green.name=Grüne Kerze
+tile.fcBlockCandle_brown.name=Braune Kerze
+tile.fcBlockCandle_blue.name=Blaue Kerze
+tile.fcBlockCandle_purple.name=Violette Kerze
+tile.fcBlockCandle_cyan.name=Türkise Kerze
+tile.fcBlockCandle_lightGray.name=Hellgraue Kerze
+tile.fcBlockCandle_gray.name=Graue Kerze
+tile.fcBlockCandle_pink.name=Pinke Kerze
+tile.fcBlockCandle_lime.name=Hellgrüne Kerze
+tile.fcBlockCandle_yellow.name=Gelbe Kerze
+tile.fcBlockCandle_lightBlue.name=Hellblaue Kerze
+tile.fcBlockCandle_magenta.name=Magenta Kerze
+tile.fcBlockCandle_orange.name=Orange Kerze
+tile.fcBlockCandle_white.name=Weiße Kerze
 
 tile.fcBlockCobblestoneLoose.stone.name=Lockerer Bruchstein
 tile.fcBlockCobblestoneLoose.deepslate.name=Lockerer Bruchtiefenschiefer
@@ -100,7 +135,7 @@ tile.fcBlockLogSpikeSpruce.name=Fichtenholzspitze
 tile.fcBlockLogSpikeBirch.name=Birkenholzspitze
 tile.fcBlockLogSpikeJungle.name=Tropenholzspitze
 
-tile.fcBlockTorchIdle.name=Fackel
+tile.fcBlockTorchIdle.name=Unangezündete Fackel
 tile.fcBlockUnfiredClay.name=Lehmblock
 tile.fcBlockNetherSludge.name=Netherschlickblock
 tile.fcBlockMyceliumSlab.name=Myzelstufe
@@ -133,6 +168,8 @@ tile.fcBlockTorchNetherBurning.name=Brennende Fackel
 tile.fcBlockRedstoneClutch.name=Redstone-Kupplung
 tile.fcBlockSpikeIron.name=Eisenspitze
 tile.fcBlockLightningRod.name=Blitzableiter
+tile.fcBlockToolPlaced.name=Platziertes Werkzeug
+tile.fcBlockStake.name=Holzpflock
 
 tile.fcBlockStoneBrickLoose.stone.name=Lockere Steinziegel
 tile.fcBlockStoneBrickLoose.deepslate.name=Lockere Tiefenschieferziegel
@@ -169,23 +206,30 @@ tile.fcBlockPlanterSoil.name=Pflanzentopf mit Erde
 tile.fcBlockSilverfishStone.stone.name=Befallener Stein
 tile.fcBlockSilverfishCobblestone.stone.name=Befallener Bruchstein
 tile.fcBlockSilverfishStoneBrick.stone.name=Befallene Steinziegel
-tile.fcBlockSilverfishStoneBrickMossy.stone.name=Befallene bemooste Steinziegel
-tile.fcBlockSilverfishStoneCracked.stone.name=Befallene rissige Steinziegel
+tile.fcBlockSilverfishStoneBrickMossy.stone.name=Befallene Bemooste Steinziegel
+tile.fcBlockSilverfishStoneCracked.stone.name=Befallene Rissige Steinziegel
 tile.fcBlockSilverfishStoneChiseled.stone.name=Befallene Gemeißelte Steinziegel
 
 tile.fcBlockSilverfishStone.deepslate.name=Befallener Tiefenschiefer
 tile.fcBlockSilverfishCobblestone.deepslate.name=Befallener Bruchtiefenschiefer
 tile.fcBlockSilverfishStoneBrick.deepslate.name=Befallene Tiefenschieferzigel
-tile.fcBlockSilverfishStoneBrickMossy.deepslate.name=Befallene bemooste Tiefenschieferziegel
-tile.fcBlockSilverfishStoneCracked.deepslate.name=Befallene rissige Tiefenschieferziegel
+tile.fcBlockSilverfishStoneBrickMossy.deepslate.name=Befallene Bemooste Tiefenschieferziegel
+tile.fcBlockSilverfishStoneCracked.deepslate.name=Befallene Rissige Tiefenschieferziegel
 tile.fcBlockSilverfishStoneChiseled.deepslate.name=Befallene Gemeißelte Tiefenschieferziegel
 
 tile.fcBlockSilverfishStone.blackstone.name=Befallener Schwarzstein
 tile.fcBlockSilverfishCobblestone.blackstone.name=Befallener Bruchschwarzstein
 tile.fcBlockSilverfishStoneBrick.blackstone.name=Befallene Schwarzsteinziegel
-tile.fcBlockSilverfishStoneBrickMossy.blackstone.name=Befallene bemooste Schwarzsteinziegel
-tile.fcBlockSilverfishStoneCracked.blackstone.name=Befallene rissige Schwarzsteinziegel
+tile.fcBlockSilverfishStoneBrickMossy.blackstone.name=Befallene Bemooste Schwarzsteinziegel
+tile.fcBlockSilverfishStoneCracked.blackstone.name=Befallene Rissige Schwarzsteinziegel
 tile.fcBlockSilverfishStoneChiseled.blackstone.name=Befallene Gemeißelte Schwarzsteinziegel
+
+tile.fcBlockSilverfishWhiteStone.name=Befallener Weißstein
+tile.fcBlockSilverfishWhiteCobble.name=Befallener Weißbruchstein
+tile.fcBlockSilverfishWhiteStoneBrick.name=Befallene Weißsteinziegel
+tile.fcBlockSilverfishWhiteStoneBrickMossy.name=Befallene Bemooste Weißsteinziegel
+tile.fcBlockSilverfishWhiteStoneBrickCracked.name=Befallene Rissige Weißsteinziegel
+tile.fcBlockSilverfishWhiteStoneBrickChiseled.name=Befallene Gemeißelte Weißsteinziegel
 
 tile.fcBlockClay.name=Lehmerz
 tile.fcBlockGrassSlab.name=Grasstufe
@@ -194,6 +238,8 @@ tile.fcBlockBedrollOld.name=Schlafsack (Alt)
 tile.fcBlockBed.name=Bett
 tile.fcBlockSpiderEye.name=Spinnenaugenblock
 tile.fcBlockSpiderEyeSlab.name=Spinnenaugenstufe
+tile.fcBlockNitre.name=Salpeterblock
+tile.fcBlockNitreSlab.name=Salpeterstufe
 tile.fcBlockSaplingOak.name=Eichensetzling
 tile.fcBlockSaplingOak.mature.name=Ausgewachsener Eichensetzling
 tile.fcBlockSaplingSpruce.name=Fichtensetzling
@@ -206,6 +252,30 @@ tile.fcBlockMushroomCap.name=Pilz Block
 tile.fcBlockLoom.name=Webstuhl
 tile.fcBlockCharcoal.name=Holzkohleblock
 tile.fcBlockNethercoal.name=Netherkohleblock
+
+tile.fcBlockWhiteStoneBlock.name=Weißstein
+tile.fcBlockWhiteStoneRough.name=Grober Weißstein
+tile.fcBlockWhiteStoneSlab.name=Weißsteinstufe
+tile.fcBlockWhiteCobbleStairs.name=Weißbruchsteintreppe
+tile.fcBlockMossyWhiteCobble.name=Bemooster Weißbruchstein
+tile.fcBlockWhiteCobbleWall.normal.name=Weißbruchsteinmauer
+tile.fcBlockWhiteCobbleWall.mossy.name=Bemooste Weißbruchsteinmauer
+
+tile.fcBlockWhiteCobbleLoose.whitestone.name=Lockerer Weißbruchstein
+tile.fcBlockWhiteCobbleLooseStairs.name=Lockere Weißbruchsteintreppe
+tile.fcBlockWhiteCobbleLooseSlab.name=Lockere Weißbruchsteinstufe
+
+tile.fcBlockWhiteStoneBrickLoose.name=Lockere Weißsteinziegel
+tile.fcBlockWhiteStoneBrickLooseStairs.name=Lockere Weißsteinziegeltreppe
+tile.fcBlockWhiteStoneBrickLooseSlab.name=Lockere Weißsteinziegelstufe
+
+tile.fcBlockWhiteStoneBrick.name=Weißsteinziegel
+tile.fcBlockWhiteStoneBrick.normal.name=Weißsteinziegel
+tile.fcBlockWhiteStoneBrick.mossy.name=Bemooste Weißsteinziegel
+tile.fcBlockWhiteStoneBrick.cracked.name=Rissige Weißsteinzegel
+tile.fcBlockWhiteStoneBrick.chiseled.name=Gemeißelte Weißsteinziegel
+tile.fcBlockWhiteStoneBrickStairs.name=Weißsteinziegeltreppe
+tile.fcBlockWhiteStoneBrickSlab.name=Weißsteinziegelstufe
 
 # BTW Complex Blocks
 
@@ -220,8 +290,8 @@ tile.fcBlockAestheticOpaque.padding.name=Polsterungsblock
 tile.fcBlockAestheticOpaque.soap.name=Seifenblock
 tile.fcBlockAestheticOpaque.rope.name=Seilrolle
 tile.fcBlockAestheticOpaque.flint.name=Feuersteinblock
-tile.fcBlockAestheticOpaque.whitestone.name=Weißer Stein
-tile.fcBlockAestheticOpaque.whitecobble.name=Weißer Bruchstein
+tile.fcBlockAestheticOpaque.whitestone.name=Weißstein
+tile.fcBlockAestheticOpaque.whitecobble.name=Weißbruchstein
 tile.fcBlockAestheticOpaque.barrel.name=Fass
 tile.fcBlockAestheticOpaque.choppingblockbloody.name=Blutiger Schneideblock
 tile.fcBlockAestheticOpaque.choppingblock.name=Schneideblock
@@ -233,7 +303,7 @@ tile.fcBlockAestheticNonOpaque.column.name=Säule (Alt)
 tile.fcBlockAestheticNonOpaque.pedestal.name=Podest (Alt)
 tile.fcBlockAestheticNonOpaque.table.name=Tisch (Alt)
 tile.fcBlockAestheticNonOpaque.wickerslab.name=Weidenstufe (Alt)
-tile.fcBlockAestheticNonOpaque.whitecobbleslab.name=Weiße Bruchsteinstufe
+tile.fcBlockAestheticNonOpaque.whitecobbleslab.name=Weißbruchsteinstufe
 tile.fcBlockAestheticNonOpaque.lightningrod.name=Seelenstahlstab (Alt)
 tile.fcBlockAestheticVegetation.name=Ästhetische Vegetation
 tile.fcBlockAestheticVegetation.vinetrap.name=Rankenfalle
@@ -333,18 +403,30 @@ tile.fcBlackstoneBrickMoulding.pedestal.name=Schwarzsteinziegelpodest
 tile.fcBlackstoneBrickMoulding.table.name=Schwarzsteinziegeltisch
 
 tile.fcWhiteStoneSiding.name=Wandverkleidung und Ecke
-tile.fcWhiteStoneSiding.siding.name=Weiße Steinwandverkleidung
-tile.fcWhiteStoneSiding.corner.name=Weiße Steinecke
-tile.fcWhiteStoneSiding.bench.name=Weiße Steinbank
-tile.fcWhiteStoneSiding.fence.name=Weißee Steinmauer
+tile.fcWhiteStoneSiding.siding.name=Weißsteinwandverkleidung
+tile.fcWhiteStoneSiding.corner.name=Weißsteinecke
+tile.fcWhiteStoneSiding.bench.name=Weißsteinbank
+tile.fcWhiteStoneSiding.fence.name=Weißsteinmauer
 tile.fcWhiteStoneMoulding.name=Zierleiste und Dekorativ
-tile.fcWhiteStoneMoulding.moulding.name=Weiße Steinzierleiste
-tile.fcWhiteStoneMoulding.column.name=Weiße Steinsäule
-tile.fcWhiteStoneMoulding.pedestal.name=Weißes Steinpodest
-tile.fcWhiteStoneMoulding.table.name=Weißer Steintisch
+tile.fcWhiteStoneMoulding.moulding.name=Weißsteinzierleiste
+tile.fcWhiteStoneMoulding.column.name=Weißsteinsäule
+tile.fcWhiteStoneMoulding.pedestal.name=Weißsteinpodest
+tile.fcWhiteStoneMoulding.table.name=Weißsteintisch
 
-tile.fcBlockWhiteStoneStairs.smooth.name=Weiße Steintreppe
-tile.fcBlockWhiteStoneStairs.cobble.name=Weiße Bruchsteintreppe
+tile.fcWhiteStoneBrickSiding.name=Wandverkleidung und Ecke
+tile.fcWhiteStoneBrickSiding.siding.name=Weißsteinziegelwandverkleidung
+tile.fcWhiteStoneBrickSiding.corner.name=Weißsteinziegelecke
+tile.fcWhiteStoneBrickSiding.bench.name=Weißsteinziegelbank
+tile.fcWhiteStoneBrickSiding.fence.name=Weißsteinziegelmauer
+tile.fcWhiteStoneBrickMoulding.name=Zierleiste und Dekorativ
+tile.fcWhiteStoneBrickMoulding.moulding.name=Weißsteinziegelzierleiste
+tile.fcWhiteStoneBrickMoulding.column.name=Weißsteinziegelsäule
+tile.fcWhiteStoneBrickMoulding.pedestal.name=Weißsteinziegelpodest
+tile.fcWhiteStoneBrickMoulding.table.name=Weißsteinziegeltisch
+
+
+tile.fcBlockWhiteStoneStairs.smooth.name=Weißsteintreppe
+tile.fcBlockWhiteStoneStairs.cobble.name=Weißbruchsteintreppe
 
 tile.fcNetherBrickSiding.name=Wandverkleidung und Ecke
 tile.fcNetherBrickSiding.siding.name=Netherziegelwandverkleidung
@@ -428,6 +510,11 @@ tile.fcBlockCarvedPumpkin.name=Geschnitzter Kürbis
 tile.fcBlockJackOLantern.name=Kürbislanterne
 
 # Vanilla Blocks Renamed
+
+tile.cloth.pink.name=Pinke Wolle
+tile.clayHardenedStained.pink.name=Pink gefärbter Lehm
+tile.carpet.pink.name=Pinker Teppich
+item.dyePowder.pink.name=Pinker Farbstoff
 
 tile.hayBlock.name=Weizenballen
 tile.dirt.name=Erde
@@ -529,6 +616,7 @@ item.fcItemBladeWindMill.name=Segel
 item.fcItemWindMill.name=Windmühle
 item.fcItempFabric.name=Stoff
 item.fcItemGrate.name=Gitter (Alt)
+item.btw:grate.name=Gitter (Alt)
 item.fcItemWicker.name=Weidengeflecht (Alt)
 item.fcItemLeatherTanned.name=Gegerbtes Leder
 item.fcItemStrap.name=Band
@@ -594,12 +682,12 @@ item.fcItemNitre.name=Salpeter
 item.fcItemElement.name=Heizelement
 item.fcItemFuse.name=Zündschnur
 item.fcItemBlastingOil.name=Sprengöl
-item.fcItemWindMillVertical.name=Windmühle
+item.fcItemWindMillVertical.name=Vertikale Windmühle
 item.fcItemPotatoBoiled.name=Gekochte Kartoffel
 item.fcItemMuttonRaw.name=Rohes Hammelfleisch
 item.fcItemMuttonCooked.name=Gebratenes Hammelfleisch
 item.fcItemWitchWart.name=Hexenwarze
-item.fcItemCarrotCooked.name=Gekochte Karrotte
+item.fcItemCarrotCooked.name=Gekochte Karotte
 item.fcItemSandwichTasty.name=Leckeres Sandwich
 item.fcItemSteakAndPotatoes.name=Steak und Kartoffeln
 item.fcItemHamAndEggs.name=Schinken und Eier
@@ -668,6 +756,7 @@ item.fcItemChiselWood.name=Spitzer Stiel
 item.fcItemStone.stone.name=Lockerer Stein
 item.fcItemStone.deepslate.name=Lockerer Tiefenschiefer-Stein
 item.fcItemStone.blackstone.name=Lockerer Schwarzstein-Stein
+item.fcItemWhiteStone.name=Lockerer Weißstein-Stein
 
 item.fcItemChiselStone.name=Geschärfter Stein
 item.fcItemClub.name=Holzkeule
@@ -694,6 +783,7 @@ item.fcItemCarvingBone.name=Unfertiger Angelhaken
 item.fcItemBrickStone.stone.name=Steinziegel
 item.fcItemBrickStone.deepslate.name=Tiefenschieferziegel
 item.fcItemBrickStone.blackstone.name=Schwarzsteinziegel
+item.fcItemBrickWhiteStone.name=Weißsteinziegel
 
 item.fcItemWickerWeaving.name=Weidenflechterei
 item.fcItemWheat.name=Weizen
@@ -705,9 +795,9 @@ item.fcItemBrickCrudeUnfired.name=Ungebrannter primitiver Ziegel
 item.fcItemBrickNetherUnfired.name=Ungebrannter Netherziegel
 item.fcItemChiselDiamond.name=Diamantmeißel
 item.fcItemShearsDiamond.name=Diamantschere
-item.fcItemReedRoots.name=Zuckerrohrwurzel
-item.fcItemCarrot.name=Karrotte
-item.fcItemCarrotSeeds.name=Karrottensamen
+item.fcItemReedRoots.name=Zuckerrohrwurzeln
+item.fcItemCarrot.name=Karotte
+item.fcItemCarrotSeeds.name=Karottensamen
 item.fcItemDiamondPlate.name=Diamantrüstungsplatte
 item.fcItemMelonMashed.name=Zermatschte Melone
 item.fcItemBedroll.name=Schlafsack
@@ -742,7 +832,7 @@ item.skull.wither.name=Runenverzierter Schädel
 item.skull.infused.name=Infundierter Schädel 
 item.wheat.name=Weizen (Alt)
 item.seeds.name=Weizensamen (Alt)
-item.carrots.name=Karrotte (Alt)
+item.carrots.name=Karotte (Alt)
 item.fishRaw.name=Roher Fisch
 item.fishCooked.name=Gebratener Fisch
 item.shears.name=Eisenschere
@@ -873,7 +963,7 @@ item.fcItemWaterWheel.placementObstructed=Die Platzierung des Wasserrades wird d
 item.fcItemWaterWheel.notEnoughRoom=Nicht genügend Platz um das Wasserrad zu platzieren
 message.windMill.placementObstructed=Die Platzierung der Windmühle wird durch etwas oder dich behindert
 message.windMill.notEnoughRoom=Nicht genügend Platz um die Windmühle zu platzieren (Die sind RIESIG!)
-item.fcItemWindMillVertical.tooFewAxles=Zu wenige vertikale Achsen innerhalb dieser säule, um die Windmühle hier zu platzieren
+item.fcItemWindMillVertical.tooFewAxles=Zu wenige vertikale Achsen innerhalb dieser säule, um die Vertikale Windmühle hier zu platzieren
 tile.beacon.playerBound=Du wurdest an dieses Leuchtfeuer gebunden
 tile.beacon.invalid=Der Ort deiner Wiederbelebung war ungültig
 tile.beacon.notPresent=Das Leuchtfeuer an das du gebunden warst ist nicht mehr vorhanden
